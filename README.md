@@ -80,7 +80,7 @@
 * Stock Images
     * Unsplash
     * Pixabay
-* Google Lighthouse
+* Google Lighthouse eventuellt även Audit? För egna webbplatsen, med möjlighet för Accessability delar.
 * Remote/local - CSS/bilder
 * Minifiering
 
