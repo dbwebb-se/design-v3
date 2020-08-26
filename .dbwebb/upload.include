@@ -1,0 +1,39 @@
+# dbwebb config files
+- /.dbwebb.exclude
+- /.dbwebb.include
+- /.dbwebb.tests
+- /.dbwebb.version
+/.dbwebb/*
+/.dbwebb*
+
+# Validator config files
+/.*rc
+/.*.xml
+/.*.conf
+/.*.json
+
+/example/
+/me/
+
+- /**/.anax
+- /**/.bin
+- /**/.circleci
+- /**/.docker
+- /**/.git
+- /**/build
+- /**/cache/cimage/*
+- /**/cache/anax/*
+- /**/node_modules
+- /**/theme/src/@*/*
+- /**/theme/htdocs
+- /**/vendor/mos/cimage/webroot
+- /**/vendor/**/doc
+- /**/vendor/**/docs
+- /**/vendor/**/htdocs
+- /**/vendor/**/test
+
+/example/**
+/me/**
+
+- */
+- *

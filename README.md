@@ -1,103 +1,27 @@
-# Design
+Web design and usability for the programmer (design v3)
+===================
 
-# kmom01 - Portfolio med Pico och Markdown
+Course material for design (v3), aimed at a Swedish target audience being software engineering/computer science students at a university level.
 
-* Portfolio-sida
-    * Pico
-    * Mall
-        * dbwebb tema
-    * Gör ett eget tema (CSS)
-* Git
+Released as part of the university course presented at:
 
-## Material
+* https://dbwebb.se/kurser/design-v3
 
-* [Pico](http://picocms.org/)
-* Git
-    * Branches
-    * PR
-    * Tags
-    * Version
-    * Releases
+The usage of this repo is also documented here (in Swedish):
 
-# kmom02 - SASS
+* https://dbwebb.se/dbwebb-cli
 
-* SASS
-    * SASS moduler(?)
-* Gör om temat från 01 till SASS
-* Typografi
 
-## Material
+Acknowledgement
+-------------------
 
-* CSS-ramverk
-    * Bootstrap
-    * Bulma
-    * UIkit
-    * PureCSS
-* Typografi
-    * Sans Serif/Serif
-    * Google Fonts
-    * Font Squirrel
-* Ikoner
-    * FontAwesome
-    * [UTF8](https://www.utf8icons.com/)
-* Saker att tänka på
-    * Polyfill
-    * Normalize.css
+This is a co-effort of several people using freely available documentation and tools from the open source community. 
 
-# kmom03 - Struktur och Grid
+For contributors, see the commit history and the issues.
 
-* CSS-grid
-* Flex
-* Responsivitet
+Feel free to help building up the repository with more content suited for training and education.
 
-## Material
-
-* Sticky footer
-* Position: absolute, fixed, sticky
-* [A Complete Guide to Grid - CSS-Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
-* [A Complete Guide to Flexbox - CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-    * Egna exempel?
-
-# kmom04 - Färger
-
-* Utvärdera webbplatsers färgval och känslan de signalerar
-* Färglära
-* Dark Mode
-
-## Material
-
-* [Dark Mode](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
-
-# kmom05 - Bildhantering, laddningstider och användbarhet
-
-* Utvärdera webbplatsers laddningstid och användbarhet
-* Blogg
-    * srcset
-    * Bilder
-
-## Material
-
-* Stock Images
-    * Unsplash
-    * Pixabay
-* Google Lighthouse eventuellt även Audit? För egna webbplatsen, med möjlighet för Accessability delar.
-* Remote/local - CSS/bilder
-* Minifiering
-
-# kmom06
-
-* Utvärdera designprinciper som webbplatser använder sig av
-* Skapa tema med designprinciper
-* Skapa tema med designelement
-
-# kmom10
-
-* The same thing but better
-
-# Ej placerat
-
-* Accessability
-    * Färgblindhet
-        * https://www.toptal.com/designers/colorfilter/
-    * Formulär, bilder
-    * Tabbning mellan olika delar av sidan
+```                                                            
+ .
+..:  Copyright (c) 2015-2020 dbwebb et al, info@dbwebb.se
+```                                                            

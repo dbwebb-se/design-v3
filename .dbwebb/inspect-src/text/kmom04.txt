@@ -1,0 +1,13 @@
+Låt se hur kmom04, med färger, föll ut.
+
+Jag tittar på me/redovisa och temana för minimalistic, colorful och dark.
+
+Jag läser igenom din artikel om färgval hos webbplatser.
+
+Redovisningstexten gås igenom för att se hur du upplever kmomet.
+
+Jag kikar på ditt repo på GitHub för att se att committs och taggar är på plats och att temafilerna ligger på sin plats under theme/.
+
+Bra jobbat så här långt. Detta kmom (kmom03/04) belönas med 2,5hp.
+
+$TEACHER_SIGNATURE
