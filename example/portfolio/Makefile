@@ -82,10 +82,14 @@ clean-all:
 install:
 	@$(call HELPTEXT,$@)
 	composer install
+
+
+# target: npm-install                 - Install npm packages.
+.PHONY:  npm-install
+npm-install:
+	@$(call HELPTEXT,$@)
 	cd themes && npm install
 	cd ..
-
-
 
 # target: update                  - Update the codebase and tools.
 .PHONY:  update
@@ -95,7 +99,8 @@ update:
 	composer update
 	cd themes && npm update
 	cd ..
-
+	make cimage-install
+	make cimage-config-create
 
 
 # ------------------------------------------------------------------------
@@ -107,7 +112,7 @@ define CIMAGE_CONFIG
 <?php
 return [
     "mode"         => "development",
-    "image_path"   =>  __DIR__ . "/../assets/img/",
+    "image_path"   =>  __DIR__ . "/../../assets/img/",
     "cache_path"   =>  __DIR__ . "/../../cache/cimage/",
     "autoloader"   =>  __DIR__ . "/../../vendor/autoload.php",
 ];
@@ -149,3 +154,7 @@ cimage-config-create:
 	@$(call HELPTEXT,$@)
 	$(ECHO) "$$CIMAGE_CONFIG" | bash -c 'cat > assets/cimage/img_config.php'
 	cat assets/cimage/img_config.php
+
+
+.PHONY: install-all
+install-all: install npm-install cimage-install cimage-config-create
