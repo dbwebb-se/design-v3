@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="{{ config.shaded_url }}/img/favicon.ico">
+    <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+
+    {% if meta.description %}
+        <meta name="description" content="{{ meta.description|striptags }}" />
+    {% endif %}
+    {% if meta.robots %}
+        <meta name="robots" content="{{ meta.robots }}" />
+    {% endif %}
+
+    {% if current_page %}
+        <link rel="canonical" href="{{ current_page.url }}" />
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ config.shaded_url }}/css/normalize.min.css" type="text/css" />
+    <link rel="stylesheet" href="{{ config.shaded_url }}/css/font-awsome.min.css" type="text/css" />
+    <link rel="stylesheet" href="{{ config.shaded_url }}/css/dorid-sans.css" type="text/css" />
+    <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+
+</head>
+<body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
+    <div id="header" role="banner">
+        <div class="container">
+            <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
+                <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
+                <span class="sr-only">Toggle Menu</span>
+            </a>
+            {% if pages["_meta"].meta.logo %}
+                <div id="logo" aria-hidden="true">
+                    <a href="{{ "index"|link }}">
+                        <img src="{{ pages["_meta"].meta.logo|url }}" alt="" />
+                    </a>
+                </div>
+            {% endif %}
+            <div id="title"{{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
+                <a href="{{ "index"|link }}">
+                    <h1>{{ site_title }}</h1>
+                    {{ pages["_meta"].meta.tagline|markdown }}
+                </a>
+            </div>
+            <div id="nav" role="navigation" tabindex="-1">
+                <ul>
+                    {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
+                        <li{% if page.id == current_page.id %} class="active"{% endif %}>
+                            <a href="{{ page.url }}">{{ page.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="flash-region">
+              <img class="flash-img" src="{{ base_url }}/image/tree2.jpg?sc=banner1&a=40,0,0,0">
+            </div>
+        </div>
+    </div>
+    <div id="main" role="main">
+        <div class="container">
+            {{ content }}
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="social">
+                {% for social in pages["_meta"].meta.social %}
+                    <a href="{{ social.url }}" title="{{ social.title }}" role="button">
+                        <i class="fa fa-{{ social.icon }}" aria-hidden="true"></i>
+                        <span class="sr-only">{{ social.title }}</span>
+                    </a>
+                {% endfor %}
+            </div>
+            <p>
+                En footer med lite text.
+            </p>
+        </div>
+    </div>
+
+    <script src="{{ config.shaded_url }}/js/modernizr-3.3.1-custom.min.js" type="text/javascript"></script>
+    <script src="{{ config.shaded_url }}/js/utils.js" type="text/javascript"></script>
+    <script src="{{ config.shaded_url }}/js/responsive-navbar.js" type="text/javascript"></script>
+</body>
+</html>
