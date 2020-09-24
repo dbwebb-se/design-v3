@@ -10,7 +10,7 @@
 
 /* --------------- Layout --------------- */
 
-.container {
+.wrapper {
     max-width: 960px;
     margin: 0 auto;
     grid-template-columns: 200px auto;
@@ -22,7 +22,7 @@
 .footer,
 .side-bar {
     padding: 1em;
-    border: 3px solid;
+    border: 3px solid black;
 }
 
 /* --------------- Header --------------- */
@@ -38,8 +38,9 @@
 .main {
     background-color: #ccc;
     grid-column: 2 / 2;
+    grid-row: 2 / 3;
     grid-gap: 25px;
-    grid-template-areas: 'top-left top-right' 'bottom-left bottom-right';
+    grid-template-areas: 'top-left top-right' 'bottom bottom';
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
 }
@@ -49,8 +50,7 @@
     border: 2px dotted black;
 }
 
-.bottom-left { grid-area: bottom-left; }
-.bottom-right { grid-area: bottom-right; }
+.bottom { grid-area: bottom; }
 .top-left { grid-area: top-left; }
 .top-right { grid-area: top-right; }
 
@@ -66,4 +66,15 @@
     background-color: #ffdc00;
     grid-column: 1 / 3;
     grid-row: 3 / 3;
+}
+
+/* --------------- Responsiveness --------------- */
+
+@media screen and (max-width: 960px) {
+    .main {
+        padding: 0.5em;
+        grid-gap: 5px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'top-left' 'top-right' 'bottom';
+    }
 }
