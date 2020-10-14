@@ -38,7 +38,6 @@ CHECK_VERSION = printf "%-15s %-10s %s\n" "`basename $(1)`" "`$(1) --version $(2
 
 # Get current working directory, it may not exist as environment variable.
 PWD = $(shell pwd)
-ACTIVE_THEMES = $(shell find ./themes -maxdepth 1 -not -type d -and -not -name 'node_modules')
 
 # target: help                    - Displays help.
 .PHONY:  help
@@ -74,8 +73,7 @@ clean-cache:
 .PHONY:  clean-all
 clean-all:
 	@$(call HELPTEXT,$@)
-	rm -rf vendor composer.lock themes/package-lock.json themes/node_modules/
-
+	rm -rf vendor composer.lock
 
 # target: install                 - Install all tools
 .PHONY:  install
@@ -84,21 +82,12 @@ install:
 	composer install
 
 
-# target: npm-install                 - Install npm packages.
-.PHONY:  npm-install
-npm-install:
-	@$(call HELPTEXT,$@)
-	cd themes && npm install
-	cd ..
-
 # target: update                  - Update the codebase and tools.
 .PHONY:  update
 update:
 	@$(call HELPTEXT,$@)
 	[ ! -d .git ] || git pull
 	composer update
-	cd themes && npm update
-	cd ..
 	make cimage-install
 	make cimage-config-create
 
@@ -157,4 +146,4 @@ cimage-config-create:
 
 
 .PHONY: install-all
-install-all: install npm-install cimage-install cimage-config-create
+install-all: install cimage-install cimage-config-create
