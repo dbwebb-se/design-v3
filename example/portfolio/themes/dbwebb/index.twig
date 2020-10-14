@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="{{ config.shaded_url }}/img/favicon.ico">
+    <link rel="icon" href="{{ theme_url }}/../shared/img/favicon.ico">
     <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
 
     {% if meta.description %}
@@ -17,10 +17,10 @@
         <link rel="canonical" href="{{ current_page.url }}" />
     {% endif %}
 
-    <link rel="stylesheet" href="{{ config.shaded_url }}/css/normalize.min.css" type="text/css" />
-    <link rel="stylesheet" href="{{ config.shaded_url }}/css/font-awsome.min.css" type="text/css" />
+    <link rel="stylesheet" href="{{ theme_url }}/../shared//css/normalize.min.css" type="text/css" />
+    <link rel="stylesheet" href="{{ theme_url }}/../shared//css/font-awsome.min.css" type="text/css" />
     <!-- Insert font choice here -->
-    {# <link rel="stylesheet" href="{{ config.shaded_url }}/css/dorid-sans.css" type="text/css" /> #}
+    {# <link rel="stylesheet" href="{{ theme_url }}/../shared//css/dorid-sans.css" type="text/css" /> #}
     <!-- End -->
     <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
 
@@ -36,7 +36,7 @@
             {% if pages["_meta"].meta.logo %}
                 <div id="logo" aria-hidden="true">
                     <a href="{{ "index"|link }}">
-                        <img src="{{ pages["_meta"].meta.logo|url }}" alt="" />
+                        <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
                     </a>
                 </div>
             {% endif %}
@@ -82,8 +82,8 @@
         </div>
     </div>
 
-    <script src="{{ config.shaded_url }}/js/modernizr-3.3.1-custom.min.js" type="text/javascript"></script>
-    <script src="{{ config.shaded_url }}/js/utils.js" type="text/javascript"></script>
-    <script src="{{ config.shaded_url }}/js/responsive-navbar.js" type="text/javascript"></script>
+    <script src="{{ theme_url }}/../shared//js/modernizr-3.3.1-custom.min.js" type="text/javascript"></script>
+    <script src="{{ theme_url }}/../shared//js/utils.js" type="text/javascript"></script>
+    <script src="{{ theme_url }}/../shared//js/responsive-navbar.js" type="text/javascript"></script>
 </body>
 </html>
