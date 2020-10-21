@@ -26,45 +26,47 @@
 </head>
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
-    <div id="header" role="banner">
+    <div class="header" role="banner">
         <div class="container">
-            <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
+            <a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
                 <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
                 <span class="sr-only">Toggle Menu</span>
             </a>
             {% if pages["_meta"].meta.logo %}
-                <div id="logo" aria-hidden="true">
+                <div class="logo" aria-hidden="true">
                     <a href="{{ "index"|link }}">
                         <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
                     </a>
                 </div>
             {% endif %}
-            <div id="title"{{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
+            <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
                 <a href="{{ "index"|link }}">
                     <h1>{{ site_title }}</h1>
                     {{ pages["_meta"].meta.tagline|markdown }}
                 </a>
             </div>
-            <div id="nav" role="navigation" tabindex="-1">
-                <ul>
-                    {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
-                        <li{% if page.id == current_page.id %} class="active"{% endif %}>
-                            <a href="{{ page.url }}">{{ page.title }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
+            <div class="nav">
+                <div id="nav" role="navigation" tabindex="-1">
+                    <ul>
+                        {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
+                            <li{% if page.id == current_page.id %} class="active"{% endif %}>
+                                <a href="{{ page.url }}">{{ page.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
             <div class="flash-region">
               <img class="flash-img" src="{{ base_url }}/image/tree2.jpg?sc=banner1&a=40,0,0,0">
             </div>
         </div>
     </div>
-    <div id="main" role="main">
+    <div class="main" role="main">
         <div class="container">
             {{ content }}
         </div>
     </div>
-    <div id="footer">
+    <div class="footer">
         <div class="container">
             <div class="social">
                 <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->

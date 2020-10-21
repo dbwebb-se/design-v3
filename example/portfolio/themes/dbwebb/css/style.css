@@ -26,14 +26,12 @@
 
 .slide {
     overflow-y: hidden !important;
-    -webkit-transition: height 0.5s ease-in !important;
     transition: height 0.5s ease-in !important;
 }
 
 /*** BASIC LAYOUT ***/
 
-html,
-body {
+html, body {
     height: 100%;
 }
 
@@ -42,16 +40,15 @@ body {
     flex-direction: column;
 }
 
-#main {
+.main {
     flex: 1 0 auto;
 }
 
-#header,
-#footer {
+.header, .footer {
     flex: 0 0 auto;
 }
 
-#main {
+.main {
     padding: 5em 0 4em;
 }
 
@@ -66,93 +63,90 @@ body {
 }
 
 /* very ugly overflow fix, avoid this whenever possible! */
-#main .container {
+
+.main .container {
     overflow-x: auto;
 }
 
 /*** BASIC LAYOUT: HEADER ***/
 
-#header {
+.header {
     background: #fff;
 }
 
-#title,
-#logo {
+.title, .logo {
     float: left;
     padding: 3em 3em 3em 0;
 }
 
-#title * {
+.title * {
     margin: 0;
     color: #111;
 }
 
-#title p {
+.title p {
     font-style: italic;
 }
 
-#logo {
+.logo {
     height: 10.8em;
 }
 
-#logo * {
+.logo * {
     display: block;
     height: 100%;
 }
 
-#logo img {
+.logo img {
     min-width: 4.8em;
 }
 
-#logo + #title h1 {
+.logo+.title h1 {
     margin: 0.8rem 0;
 }
 
-#logo + #title.tagline h1 {
+.logo+.title.tagline h1 {
     margin: 0;
 }
 
-#nav {
+.nav {
     padding: 3em 0;
     text-align: right;
 }
 
-#nav ul {
+.nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-#nav ul li {
+.nav ul li {
     display: inline-block;
     margin-left: 1em;
     padding: 0;
     font-weight: bold;
 }
 
-#nav a,
-#nav-toggle {
+.nav a, .nav-toggle {
     color: #333;
 }
 
-#nav .active a,
-#nav a:hover,
-#nav-toggle:hover {
+.nav .active a, .nav a:hover, .nav-toggle:hover {
     color: #3b440d;
 }
 
-#nav a:hover,
-#nav-toggle:hover {
+.nav a:hover, .nav-toggle:hover {
     color: #3b440d;
     text-decoration: underline;
 }
 
-#nav-toggle {
+.nav-toggle {
     display: none;
 }
 
 /* IE8 + IE9 clearfix */
-#header > .container::after {
+
+.header>.container::after {
     content: '';
     display: block;
     clear: both;
@@ -164,25 +158,25 @@ body {
 
 /*** BASIC LAYOUT: FOOTER ***/
 
-#footer {
+.footer {
     background: #707070;
     color: #c0c0c0;
 }
 
-#footer a {
+.footer a {
     color: #ddd;
 }
 
-#footer a:hover {
+.footer a:hover {
     color: #fff;
 }
 
-#footer p {
+.footer p {
     margin: 0;
     padding: 3em 0;
 }
 
-#footer .social {
+.footer .social {
     float: right;
     padding: 1.5em 0 1.5em 1em;
     font-size: 2rem;
@@ -191,40 +185,32 @@ body {
 /*** BASIC LAYOUT: EXTRA SMALL DEVICES ***/
 
 @media (max-width: 767px) {
-    #main {
+    .main {
         padding: 2em 0 1em;
     }
-
-    #title,
-    #logo {
+    .title, .logo {
         padding: 2em 1.5em 2em 0;
     }
-
-    #logo {
+    .logo {
         height: 8.8em;
     }
-
-    #nav {
+    .nav {
         clear: both;
         padding: 0;
     }
-
-    #nav ul {
+    .nav ul {
         padding-bottom: 1em;
     }
-
-    #nav ul li {
+    .nav ul li {
         display: block;
         margin-left: 0;
         text-align: center;
     }
-
-    #nav ul li a {
+    .nav ul li a {
         display: block;
         padding: 0.5em 0;
     }
-
-    .js #nav-toggle {
+    .js .nav-toggle {
         display: block;
         float: right;
         width: 2em;
@@ -234,16 +220,13 @@ body {
         text-align: center;
         cursor: pointer;
     }
-
-    .js #nav-toggle > * {
+    .js .nav-toggle>* {
         vertical-align: middle;
     }
-
-    #footer p {
+    .footer p {
         padding: 1em 0;
     }
-
-    #footer .social {
+    .footer .social {
         padding: 0.5em 0 0.5em 1em;
     }
 }
@@ -264,34 +247,19 @@ body {
     color: #444;
 }
 
-p,
-td,
-th,
-li,
-dd {
+p, td, th, li, dd {
     text-align: justify;
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
 
-p,
-hr,
-table,
-.table-responsive,
-ol,
-ul,
-dl,
-dd,
-pre,
-blockquote,
-fieldset {
+p, hr, table, .table-responsive, ol, ul, dl, dd, pre, blockquote, fieldset {
     margin-bottom: 1em;
 }
 
 a {
     color: #2eae9b;
     text-decoration: none;
-    -webkit-transition: color 0.2s ease-in;
     transition: color 0.2s ease-in;
 }
 
@@ -299,12 +267,7 @@ a:hover {
     color: #444;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.6em;
     font-weight: bold;
     color: #333;
@@ -408,18 +371,13 @@ abbr {
     .image.xsmall {
         width: 60%;
     }
-
     .image.small {
         width: 80%;
     }
-
-    .image.large,
-    .image.xlarge {
+    .image.large, .image.xlarge {
         width: 100%;
     }
-
-    .image.float-left,
-    .image.float-right {
+    .image.float-left, .image.float-right {
         float: none;
         margin: 0 auto;
     }
@@ -431,8 +389,7 @@ table {
     border-spacing: 0;
 }
 
-td,
-th {
+td, th {
     padding: 0.4em 1em;
     vertical-align: top;
 }
@@ -444,13 +401,11 @@ th {
     color: #333;
 }
 
-td,
-th {
+td, th {
     border: 1px solid #ccc;
 }
 
-tr:not(:last-child) td,
-tr:not(:last-child) th {
+tr:not(:last-child) td, tr:not(:last-child) th {
     border-bottom: 0 none;
 }
 
@@ -458,18 +413,15 @@ thead tr:last-child th {
     border-bottom: 0 none;
 }
 
-td:not(:last-child),
-th:not(:last-child) {
+td:not(:last-child), th:not(:last-child) {
     border-right: 0 none;
 }
 
-tr:first-child td:first-child,
-tr:first-child th:first-child {
+tr:first-child td:first-child, tr:first-child th:first-child {
     border-top-left-radius: 0.3em;
 }
 
-tr:first-child td:last-child,
-tr:first-child th:last-child {
+tr:first-child td:last-child, tr:first-child th:last-child {
     border-top-right-radius: 0.3em;
 }
 
@@ -481,7 +433,7 @@ tbody tr:last-child td:last-child {
     border-bottom-right-radius: 0.3em;
 }
 
-table thead + tbody tr:first-child td {
+table thead+tbody tr:first-child td {
     border-radius: 0 !important;
 }
 
@@ -489,14 +441,13 @@ table thead + tbody tr:first-child td {
     overflow-x: auto;
 }
 
-.table-responsive > table {
+.table-responsive>table {
     margin-bottom: 0;
 }
 
 /*** LISTS ***/
 
-ol,
-ul {
+ol, ul {
     list-style-position: outside;
     padding-left: 1.5em;
 }
@@ -558,57 +509,35 @@ blockquote {
 
 /*** FORMS ***/
 
-label,
-fieldset legend {
+label, fieldset legend {
     font-weight: bold;
 }
 
-input:not([type="checkbox"]):not([type="radio"]),
-button,
-select,
-textarea,
-fieldset,
-fieldset legend {
+input:not([type='checkbox']):not([type='radio']), button, select, textarea, fieldset, fieldset legend {
     border: 1px solid #ccc;
     border-radius: 0.3em;
     background: #fff;
-    -webkit-transition: none 0.2s ease-in;
     transition: none 0.2s ease-in;
-    -webkit-transition-property: border-color, background, box-shadow;
     transition-property: border-color, background, box-shadow;
 }
 
-input:not([type="checkbox"]):not([type="radio"]),
-button,
-select,
-textarea {
+input:not([type='checkbox']):not([type='radio']), button, select, textarea {
     padding: 0.5em 1em;
     outline: 0 none;
     font-size: 1rem;
 }
 
-input:focus:not([type="checkbox"]):not([type="radio"]),
-button:focus,
-select:focus,
-textarea:focus {
+input:focus:not([type='checkbox']):not([type='radio']), button:focus, select:focus, textarea:focus {
     border-color: #2eae9b;
     box-shadow: 0 0 8px #2eae9b;
 }
 
-input[type="button"]:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-button:focus,
-input[type="button"]:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-button:hover {
+input:focus, button:focus, button:hover {
     background: #f5f5f5;
     cursor: pointer;
 }
 
-textarea,
-select[multiple] {
+textarea, select {
     vertical-align: bottom;
     overflow: auto;
 }
@@ -622,33 +551,21 @@ fieldset legend {
     padding: 0 0.5em;
 }
 
-fieldset label,
-fieldset input,
-fieldset button,
-fieldset select,
-fieldset textarea {
+fieldset label, fieldset input, fieldset button, fieldset select, fieldset textarea {
     margin: 0.2em 0.5em;
 }
 
-fieldset label:first-child,
-fieldset input:first-child,
-fieldset button:first-child,
-fieldset select:first-child,
-fieldset textarea:first-child {
+fieldset label:first-child, fieldset input:first-child, fieldset button:first-child, fieldset select:first-child, fieldset textarea:first-child {
     margin-left: 0;
 }
 
-fieldset label:last-child,
-fieldset input:last-child,
-fieldset button:last-child,
-fieldset select:last-child,
-fieldset textarea:last-child {
+fieldset label:last-child, fieldset input:last-child, fieldset button:last-child, fieldset select:last-child, fieldset textarea:last-child {
     margin-right: 0;
 }
 
 /* Firefox input size fix */
-input::-moz-focus-inner,
-button::-moz-focus-inner {
+
+input::-moz-focus-inner, button::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
