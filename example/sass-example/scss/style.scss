@@ -1,5 +1,5 @@
-$magicNumber: 1.5em;
-$amazingColor: lightblue;
+$magic-number: 1.5em;
+$amazing-color: rgb(173, 216, 230);
 
 * {
     margin: 0;
@@ -20,9 +20,9 @@ body {
 
     .child {
         width: 80%;
-        padding: $magicNumber;
-        margin: $magicNumber / 2;
-        background-color: $amazingColor;
+        padding: $magic-number;
+        margin: $magic-number / 2;
+        background-color: $amazing-color;
     }
 
     .child:first-child {
