@@ -1,0 +1,35 @@
+$magicNumber: 1.5em;
+$amazingColor: lightblue;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .child {
+        width: 80%;
+        padding: $magicNumber;
+        margin: $magicNumber / 2;
+        background-color: $amazingColor;
+    }
+
+    .child:first-child {
+        margin-top: 0;
+    }
+
+    .child:last-child {
+        margin-bottom: 0;
+    }
+}
