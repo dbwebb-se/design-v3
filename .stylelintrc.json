@@ -15,6 +15,7 @@
     },
     "ignoreFiles": [
         "**/node_modules/",
+        "shared/*.scss",
         "**/*.css",
         "**/*.min.css"
     ]
