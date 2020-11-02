@@ -4,7 +4,7 @@ Jag tittar snabbt på din me/portfolio för att se att alla delar är med och at
 
 Jag kollar igenom din redovisningstext så att allt såg okey ut.
 
-Jag kikar på ditt repo på GitHub för att se att committs och taggar är på plats.
+Jag kikar på ditt repo på GitHub för att se att commits och taggar är på plats.
 
 En god start. Kämpa på.
 
