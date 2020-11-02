@@ -1,6 +1,6 @@
 Hjärtligt välkommen till kursen design!
 
-Jag tittar snabbt på din me/redovisa för att se att alla delar är med och att webbplatsen är hyffsat "användbar" med din CSS-kod.
+Jag tittar snabbt på din me/portfolio för att se att alla delar är med och att webbplatsen är hyffsat "användbar" med din CSS-kod.
 
 Jag kollar igenom din redovisningstext så att allt såg okey ut.
 
@@ -10,4 +10,4 @@ En god start. Kämpa på.
 
 $TEACHER_SIGNATURE
 
-PS. Glöm inte att fråga i forumet för mer utförliga svar.
+PS. Glöm inte att fråga på Discord eller via GitHub Issues för mer utförliga svar.

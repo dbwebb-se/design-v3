@@ -1,6 +1,8 @@
-Då tittar vi kmom02 med LESS.
+Då tittar vi kmom02 med SASS.
 
-Jag tittar på din me/redovisa för att se att ditt LESS-tema fungerar, med hamburgermenyn, är uppdelat i moduler och är aktiverat som default stylesheet.
+Jag tittar på din me/portfolio för att se att ditt SASS-tema fungerar som det ska. Jag kollar så att du laddar in en egen font samt ikoner via Font Awesome. Jag kollar även så att normalize.css är inladdat.
+
+Jag kollar så att dina SASS-filer går igenom våran lint, "npm run lint".
 
 Jag läser igenom din redovisningstext.
 
