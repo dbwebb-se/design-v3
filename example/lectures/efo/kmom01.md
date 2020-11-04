@@ -69,3 +69,32 @@ Ett litet företag med programmerare, inhyrda designers för olika företag. Job
 
 
 ### Hur jobbar en webbprogrammerare?
+
+Den ensamma programmeraren är en myt.
+
+Som programmerare jobbar vi tillsammans med många andra personer i olika roller.
+
+* Designers
+* UI / UX
+* Projektledare
+* Programmerare - frontend/backend
+* Devops
+* Chefer
+
+Kommunikation både i kod och skrift.
+
+```css
+.x {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+```
+
+```css
+.red-box {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+```
