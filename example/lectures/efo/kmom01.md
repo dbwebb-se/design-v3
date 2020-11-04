@@ -89,12 +89,48 @@ Kommunikation både i kod och skrift.
     height: 300px;
     background-color: red;
 }
-```
 
-```css
 .red-box {
     width: 300px;
     height: 300px;
     background-color: red;
 }
 ```
+
+* E-post
+* Issues
+* Projektverktyg
+
+
+
+## Verktyg i denna kurs
+
+### Pakethanterare
+
+[Composer](https://getcomposer.org)
+
+[npm](https://www.npmjs.com)
+
+
+
+### Versionshantering
+
+[Git](https://git-scm.com)
+
+
+
+### CMS
+
+[pico-cms](http://picocms.org)
+
+[Markdown](https://daringfireball.net/projects/markdown/)
+
+
+
+### Stil
+
+HTML
+
+CSS
+
+[SASS](https://sass-lang.com)
