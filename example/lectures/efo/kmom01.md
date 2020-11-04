@@ -83,13 +83,20 @@ Som programmerare jobbar vi tillsammans med många andra personer i olika roller
 
 Kommunikation både i kod och skrift.
 
+* E-post
+* Issues
+* Projektverktyg
+* Kod
+
 ```css
 .x {
     width: 300px;
     height: 300px;
     background-color: red;
 }
+```
 
+```css
 .red-box {
     width: 300px;
     height: 300px;
@@ -97,9 +104,33 @@ Kommunikation både i kod och skrift.
 }
 ```
 
-* E-post
-* Issues
-* Projektverktyg
+```html
+<div class="a">
+    <div class="b">
+
+    </div>
+
+    <p>Not so good markup!</p>
+
+    <div class="c">
+
+    </div>
+</div>
+```
+
+```html
+<article>
+    <header>
+
+    </header>
+
+    <p>Semantic markup!</p>
+
+    <footer>
+
+    </footer>
+</article>
+```
 
 
 
