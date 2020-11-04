@@ -61,7 +61,7 @@ Ni ska inte bli designers i denna kurs. Vi är programmerare, men bör veta vilk
 
 Från 2012 till 2016 skrev jag PHP för pengar.
 
-Ett litet företag med programmerare, inhyrda designers för olika företag. Jobbat med en del olika designers.
+Ett litet företag med programmerare, inhyrda designers för olika uppdrag. Jobbat med en del olika designers.
 
 ### Erik
 
