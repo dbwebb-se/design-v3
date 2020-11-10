@@ -29,10 +29,18 @@ Frustration?
 [SASS](https://sass-lang.com)
 
 Olika syntax:
-    - `.scss` använder {} och ;
-    - `.sass` mer som python och använder indentering
+* `.scss` använder {} och ;
+* `.sass` mer som python och använder indentering
+
+Delar av SASS jag går igenom:
 
 * Variabler
 * Build-ins
 * Mixins
 * Functions
+
+## Typografi
+
+## Rapporter
+
+## Style av rapport
