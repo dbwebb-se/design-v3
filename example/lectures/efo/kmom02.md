@@ -41,10 +41,42 @@ Delar av SASS jag går igenom:
 
 ## Typografi
 
-<div style='font-family:"sans-serif";font-size:48px;'>sans-serif</div>
+Vad är typografi?
 
-<div style='font-family:"serif";font-size:48px;'>serif</div>
+- Vitt utrymme - whitespace
+    * Marginal
+    * Radavstånd
+    * Teckenavstånd
+- Typsnitt
+    * sans-serif
+    * serif
+    * cursive
+    * monospace
+
+![typsnitt](https://dbwebb.se/repo/slides/ht19/img/typsnitt.png)
+
+### Läsbarhet
+
+Påverkas av många saker:
+
+Tecken per rad
+Radavstånd
+Typsnittets egna läsbarhet
+Bold/Italic
+
+
 
 ## Rapporter
 
-## Style av rapport
+Jag ska bli programmerare, varför ska jag skriva?
+
+Klart överkurs:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9LfmrkyP81M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Akademisk utbildning - för programmen kommer ett exjobb om drygt 1,5/2,5 år.
+
+**För att bli bra på nått måste man träna.**
+
+### Style av rapport
+
+Avslutar dagen med lite praktiskt.
