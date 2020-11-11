@@ -39,9 +39,13 @@ Delar av SASS jag går igenom:
 * Mixins
 * Functions
 
+
+
 ## Typografi
 
 Vad är typografi?
+
+### 5 minuter: Vilka webbplatser har bra typografi?
 
 - Vitt utrymme - whitespace
     * Marginal
@@ -55,14 +59,16 @@ Vad är typografi?
 
 ![typsnitt](https://dbwebb.se/repo/slides/ht19/img/typsnitt.png)
 
+
+
 ### Läsbarhet
 
 Påverkas av många saker:
 
-Tecken per rad
-Radavstånd
-Typsnittets egna läsbarhet
-Bold/Italic
+* Tecken per rad
+* Radavstånd
+* Typsnittets egna läsbarhet
+* Bold/Italic
 
 
 
@@ -71,11 +77,16 @@ Bold/Italic
 Jag ska bli programmerare, varför ska jag skriva?
 
 Klart överkurs:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9LfmrkyP81M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=9LfmrkyP81M
+" target="_blank"><img src="http://img.youtube.com/vi/9LfmrkyP81M/0.jpg"
+alt="Youtube video" width="240" height="180" border="10" /></a>
 
 Akademisk utbildning - för programmen kommer ett exjobb om drygt 1,5/2,5 år.
 
 **För att bli bra på nått måste man träna.**
+
+
 
 ### Style av rapport
 
