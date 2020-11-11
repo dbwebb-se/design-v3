@@ -41,6 +41,10 @@ Delar av SASS jag går igenom:
 
 ## Typografi
 
+<div style='font-family:"sans-serif";font-size:48px;'>sans-serif</div>
+
+<div style='font-family:"serif";font-size:48px;'>serif</div>
+
 ## Rapporter
 
 ## Style av rapport
