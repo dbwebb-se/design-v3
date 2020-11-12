@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    border: 1px solid #3c3c3c;
+    margin: 1em;
+}
+
+.container div {
+    padding: 2em;
+}
+
+.container div:first-child {
+    background-color: #9b59b6;
+}
+
+.container div:nth-child(even) {
+    background-color: #3498db;
+}
+
+.container div:last-child {
+    background-color: #2ecc71;
+}
+
+/* Order */
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+/* flex-grow */
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.flex-grow-4 {
+    flex-grow: 4;
+}
