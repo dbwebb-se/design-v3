@@ -1,11 +1,13 @@
-Då tittar vi på kmom03 och gridet.
+Då tittar vi på kmom03 med CSS-grid/flexbox.
 
-Jag tittar på din me/redovisa för att se att ditt LESS-tema fungerar för kmom03. Jag vill se att ?hgrid och ?vgrid syns och att det ligger i linje med ditt innehåll i webbsidan. Jag vill även se att du har viss struktur på din typografi och ett medvetet val om typsnitt samt att ditt tema löser övriga krav i uppgiften.
+Jag tittar på me/portfolio/report och kmom03 sidan för att se hur de blev och att du följer de wireframes som fanns till uppgiften.
+
+Jag kollar över dina SASS-filer för att se hur du löst uppgiften och dubbelkollar att de går igenom våran lint, "npm run lint".
 
 Jag läser igenom din redovisningstext.
 
-Jag kikar på ditt repo på GitHub för att se att committs och taggar är på plats och att temafilerna ligger på sin plats under theme/.
+Jag kikar även på ditt repo på GitHub för att se så att commits och taggar är på plats.
 
-Kämpa på.
+Halva kursen avklarade, bra jobbat. Snart är det julledighet, kämpa på!
 
 $TEACHER_SIGNATURE
