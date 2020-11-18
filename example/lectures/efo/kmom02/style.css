@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: white;
+}
+
+.line {
+  background-color: purple;
+  color: white;
+}
+.line p {
+  font-size: 14px;
+}
+.line a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -11,4 +11,13 @@ body {
 
 .line {
     background-color: $line-color;
+    color: $text-color;
+
+    p {
+        font-size: 14px;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
