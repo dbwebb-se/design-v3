@@ -38,8 +38,12 @@ Vilken känsla vill vi signalera?
 
 ## Skriva - rapport
 
-Tjuvstartat lite på mina föreläsningar: [Upgifter - kmom04](https://dbwebb.se/kurser/design-v3/kmom04#uppgifter)
+Tjuvstartat lite på mina föreläsningar: [Uppgifter - kmom04](https://dbwebb.se/kurser/design-v3/kmom04#uppgifter)
 
 ## Skriva - redovisningstext
 
 > Repetitio est mater studiorum
+
+> Repetition är kunskapens moder
+
+Reflektion över eget lärande -> ledar till mer lärande.
