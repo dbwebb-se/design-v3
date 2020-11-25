@@ -45,8 +45,8 @@ Tre små lampor eller kanaler. 0 - 255 i värde. 0 är släckt - 255 är full st
 `names` - `background: blue;`
 
 ### HSL och HSV
-![hsl](https://dbwebb.se/repo/slides/ht19/image/HSL_color_solid_cylinder_saturation_gray.png?width=200)
-![hsv](https://dbwebb.se/repo/slides/ht19/image/HSV_color_solid_cylinder_saturation_gray.png?width=200)
+![hsl](https://dbwebb.se/repo/slides/ht19/img/HSL_color_solid_cylinder_saturation_gray.png)
+![hsv](https://dbwebb.se/repo/slides/ht19/img/HSV_color_solid_cylinder_saturation_gray.png)
 
 
 ### Genomskinlighet
