@@ -38,11 +38,15 @@ Tre små lampor eller kanaler. 0 - 255 i värde. 0 är släckt - 255 är full st
 
 `256 * 256 * 256 ≈ 16 miljoner färger`
 
-<div style="background-color: rgb(255, 255, 0), width: 400px; height: 200px;">
-    background-color: rgb(255, 255, 0)
-</div>
+`background-color: rgb(255, 255, 0)`
 
 `hex` - `#ffff00` eller `#ff0`
+
+`names` - `background: blue;`
+
+### HSL och HSV
+
+![hsl och hsv](https://dbwebb.se/repo/slides/ht19/img/HSV_color_solid_cylinder_saturation_gray.png)
 
 ### Genomskinlighet
 
