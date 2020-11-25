@@ -55,6 +55,22 @@ Tre små lampor eller kanaler. 0 - 255 i värde. 0 är släckt - 255 är full st
 
 `hexa` - `#ffff0080` (verkar dock inte fungera med pigments-modulen)
 
+## Intermezzo - snask.com
+
+[snask.com](https://snask.com)
+
+**Make enemies and gain fans**
+
+This is marketing - Seth Godin
+
+[1000 True Fans](https://kk.org/thetechnium/1000-true-fans/)
+
+### 5 minuter: Andra bolag som medvetet säger: "Not for you"?
+
+## Vad kan vi använda färg för?
+
+[Design Element och Principer](https://www.canva.com/learn/design-elements-principles/)
+
 ## Att välja färger
 
 Har vi nått att utgå ifrån? Logga?
@@ -62,6 +78,12 @@ Har vi nått att utgå ifrån? Logga?
 Vilken känsla vill vi signalera?
 
 [color.adobe.com](https://color.adobe.com)
+
+### Projektet i design
+
+3 kunder
+
+Hur kan vi använda färg för att signalera?
 
 ## Skriva - rapport
 
