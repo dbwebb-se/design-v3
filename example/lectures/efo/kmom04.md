@@ -4,6 +4,8 @@
 
 Hur fungerar färg?
 
+### 5-minuter: Webbplatser som ni tycker använder färg bra?
+
 ## Färgmodeller
 
 ![RGB vs. CMYK](https://dbwebb.se/repo/slides/ht19/img/RGBvCMYK.jpg)
@@ -27,6 +29,26 @@ Det mörkaste vi har är när datorskärmen är släckt. RGB är en additiv fär
 Vi adderar ljus med olika färger för att skapa alla de färger vi ser på skärmen.
 
 För varje pixel 3 små lampor (dioder), en röd, en grön, en blå.
+
+## Färg i CSS
+
+Tre små lampor eller kanaler. 0 - 255 i värde. 0 är släckt - 255 är full styrka.
+
+256 nyanser av röd, grön och blå.
+
+`256 * 256 * 256 ≈ 16 miljoner färger`
+
+<div style="background-color: rgb(255, 255, 0), width: 400px; height: 200px;">
+    background-color: rgb(255, 255, 0)
+</div>
+
+`hex` - `#ffff00` eller `#ff0`
+
+### Genomskinlighet
+
+`rgba(255, 255, 0, 0.5)`
+
+`hexa` - `#ffff0080` (verkar dock inte fungera med pigments-modulen)
 
 ## Att välja färger
 
