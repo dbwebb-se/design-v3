@@ -1,6 +1,10 @@
 Låt se hur kmom04, med färger, föll ut.
 
-Jag tittar på me/redovisa och temana för minimalistic, colorful och dark.
+Jag tittar på me/portfolio, samt hur du implementerat ditt tema.
+
+Jag kollar vilka SASS-filer som finns, vad du valt för färger och din motivering kring det.
+
+Jag kollar över så att det går att gå emellan det mörka och ljusa temat.
 
 Jag läser igenom din artikel om färgval hos webbplatser.
 
