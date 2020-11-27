@@ -4,6 +4,8 @@
 
 Hur fungerar färg?
 
+### 5-minuter: Webbplatser som ni tycker använder färg bra?
+
 ## Färgmodeller
 
 ![RGB vs. CMYK](https://dbwebb.se/repo/slides/ht19/img/RGBvCMYK.jpg)
@@ -28,6 +30,47 @@ Vi adderar ljus med olika färger för att skapa alla de färger vi ser på skä
 
 För varje pixel 3 små lampor (dioder), en röd, en grön, en blå.
 
+## Färg i CSS
+
+Tre små lampor eller kanaler. 0 - 255 i värde. 0 är släckt - 255 är full styrka.
+
+256 nyanser av röd, grön och blå.
+
+`256 * 256 * 256 ≈ 16 miljoner färger`
+
+`background-color: rgb(255, 255, 0)`
+
+`hex` - `#ffff00` eller `#ff0`
+
+`names` - `background: blue;`
+
+### HSL och HSV
+![hsl](https://dbwebb.se/repo/slides/ht19/img/HSL_color_solid_cylinder_saturation_gray.png)
+![hsv](https://dbwebb.se/repo/slides/ht19/img/HSV_color_solid_cylinder_saturation_gray.png)
+
+
+### Genomskinlighet
+
+`rgba(255, 255, 0, 0.5)`
+
+`hexa` - `#ffff0080` (verkar dock inte fungera med pigments-modulen)
+
+## Intermezzo - snask.com
+
+[snask.com](https://snask.com)
+
+**Make enemies and gain fans**
+
+This is marketing - Seth Godin
+
+[1000 True Fans](https://kk.org/thetechnium/1000-true-fans/)
+
+### 5 minuter: Andra bolag som medvetet säger: "Not for you"?
+
+## Vad kan vi använda färg för?
+
+[Design Element och Principer](https://www.canva.com/learn/design-elements-principles/)
+
 ## Att välja färger
 
 Har vi nått att utgå ifrån? Logga?
@@ -35,6 +78,12 @@ Har vi nått att utgå ifrån? Logga?
 Vilken känsla vill vi signalera?
 
 [color.adobe.com](https://color.adobe.com)
+
+### Projektet i design
+
+3 kunder
+
+Hur kan vi använda färg för att signalera?
 
 ## Skriva - rapport
 
