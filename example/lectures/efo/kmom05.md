@@ -10,6 +10,10 @@ png - grafik, skärmdumpar
 
 [webp](https://developers.google.com/speed/webp) - Nytt från google
 
+Vad händer när vi väljer fel format?
+
+## 5-minuter: Webbplatser som använder bilder på ett bra sätt?
+
 ## Som design
 
 [Design Principer](https://www.canva.com/learn/design-elements-principles/)
@@ -57,6 +61,9 @@ Gyllene Snittet
 ![Skärpa](img/IMG_7434.JPG)
 
 ![Oskärpa](img/IMG_7435.JPG)
+
+
+## 5-minuter: Webbplatser som använder för många bilder?
 
 ## Laddningstider beroende på requests
 
