@@ -24,6 +24,10 @@ Erik
 
 ## Tillgänglighet
 
+Vad är tillgänglighet?
+
+Åtgärder för att så många som möjligt kan ta del av ditt sätt att göra världen bättre.
+
 [MDN](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility)
 
 [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
@@ -32,7 +36,14 @@ Erik
 
 [A List Apart](https://alistapart.com/)
 
+### Vad har vi gått igenom i kursen som är tillgänglighet?
+
+Det mesta.
+
+
 ## Dålig design
+
+Kan vi lära oss nått om bra design av dålig design?
 
 ![dålig design](https://dbwebb.se/repo/slides/ht19/img/bad-design-16.jpg)
 
@@ -45,3 +56,23 @@ Erik
 ![elefant](https://dbwebb.se/repo/slides/ht19/img/bad-design-13.jpg)
 
 ![fönster](https://dbwebb.se/repo/slides/ht19/img/bad-design-15.jpg)
+
+### 5-minutare: Andra exempel på dålig design?
+
+## Projektet
+
+På g
+
+Grundtanken är att du som utvecklare / designer ska välja en 1 av 3 kunder och skapa en webbplats.
+
+## En titt framåt
+
+Hur använder vi design längre fram i programmen / kurspaketen?
+
+oopython - Objektorienteret design
+
+databas - databas design
+
+webapp - design för små/mobila enheter
+
+oophp - Objektorienteret design, ramverk
