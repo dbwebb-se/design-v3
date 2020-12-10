@@ -1,8 +1,8 @@
-Då tar vi kmom06 med designelement och designprinciper, sedan är det bara projektet kvar.
+Då tar vi kmom06 där fokuset ligger på tillgänglighet, sen är det bara projektet kvar.
 
-Jag tittar på me/redovisa och dina två teman samt läser igenom de artiklar som hör till respektive tema.
+Jag tittar på me/portfolio och ser att dina sidor uppnår 100 i "accessibility" med Lighthouse.
 
-Jag tittar igenom din rapport från undersökningen om webbplatsers designprinciper.
+Jag tittar igenom din analys om andra personsidor och hur det reflekterade mot din egna sida.
 
 Jag läser igenom din redovisningstext.
 
