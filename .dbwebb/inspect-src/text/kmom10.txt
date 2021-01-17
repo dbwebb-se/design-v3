@@ -13,6 +13,6 @@ Redovisa baskrav: 30 (30p)
 Redovisa extra:    0 (10p)
 ---------------------------------
 TOTALT:           60 poäng (100p)
-SLUTBETYG:        E        (A-F, Fx)
+SLUTBETYG:        D        (A-F, Fx)
 
 $TEACHER_SIGNATURE
