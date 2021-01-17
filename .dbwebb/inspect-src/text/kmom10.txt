@@ -3,8 +3,8 @@ https://dbwebb.se/kurser/faq/bedomning-och-betygsattning
 
 Du har fått poäng och slutbetyg enligt följande:
 
-Projekt krav 1     10 (10p)
-Projekt krav 2,    10 (10p)
+Projekt krav 1:    10 (10p)
+Projekt krav 2:    10 (10p)
 Projekt krav 3:    10 (10p)
 Projekt krav 4:    0 (10p)
 Projekt krav 5:    0 (10p)
