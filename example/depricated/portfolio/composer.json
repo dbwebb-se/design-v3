@@ -42,6 +42,8 @@
     },
     "require": {
         "picocms/pico": "^2.1.0",
+        "picocms/pico-deprecated": "^2.1.0",
+        "picocms/composer-installer": "^1.0.1",
         "mos/cimage": "^0.8.1",
         "erusev/parsedown-extra": "0.8.0"
     },

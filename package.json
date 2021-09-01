@@ -11,10 +11,8 @@
     "eslint": "^4.10.0",
     "eslint-plugin-react": "^7.4.0",
     "html-minifier": "^4.0.0",
-    "htmlhint": "^0.11.0",
     "javascript-style-guide": "^0.9.10",
     "js-yaml": "^3.13.1",
-    "jsonlint": "^1.6.3",
     "stylelint": "^13.7.2",
     "stylelint-config-sass-guidelines": "^7.1.0",
     "uglify-js": "^3.6.5"
