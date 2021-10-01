@@ -23,12 +23,15 @@ if (( $# < 3 )); then
 fi
 
 
+ACRONYM="$3"
+
 
 # Catches Acronyms
 case "$4" in
     "-a" | "--acronym" )
         ACRONYM="$5"    ;;
-    * ) ACRONYM="$3"      ;;
 esac
+
+echo $ACRONYM
 
 exit 0
