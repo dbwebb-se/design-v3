@@ -14,7 +14,6 @@
 #
 
 
-
 # Usage
 if (( $# < 3 )); then
     printf "Usage: %s <course_dir> <course> <acronym> <test-suite> <optional args...>\n" \
@@ -22,14 +21,18 @@ if (( $# < 3 )); then
     exit 1
 fi
 
+echo $2
+echo $3
+echo $4
+echo $5
 
 ACRONYM="$3"
 
 
-# Catches Acronyms
+# Catches acronym
 case "$4" in
     "-a" | "--acronym" )
-        ACRONYM="$5"    ;;
+        ACRONYM="$5"        ;;
 esac
 
 echo $ACRONYM
