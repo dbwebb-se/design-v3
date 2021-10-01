@@ -13,6 +13,8 @@
 #  <optional args>      Optional arguments
 #
 
+
+
 # Usage
 if (( $# < 3 )); then
     printf "Usage: %s <course_dir> <course> <acronym> <test-suite> <optional args...>\n" \
@@ -20,8 +22,13 @@ if (( $# < 3 )); then
     exit 1
 fi
 
-echo "DESIGN"
 
-echo $@
+
+# Catches Acronyms
+case "$4" in
+    "-a" | "--acronym" )
+        ACRONYM="$5"    ;;
+    * ) ACRONYM="$3"      ;;
+esac
 
 exit 0
