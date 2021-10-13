@@ -33,9 +33,9 @@ ACRONYM="$3"
 
 
 # Catches acronym
-case "$4" in
+case "$5" in
     "-a" | "--acronym" )
-        ACRONYM="$5"        ;;
+        ACRONYM="$6"        ;;
 esac
 
 echo $ACRONYM
