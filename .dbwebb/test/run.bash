@@ -35,7 +35,7 @@ URL="http://www.student.bth.se/~$ACRONYM/$COURSE_NICK/me/portfolio"
 
 echo "$URL"
 
-PARSER_OUTPUT=$(node "./parsers/$KMOM.js $URL")
+PARSER_OUTPUT=$(node "$1/.dbwebb/test/parsers/$KMOM.js $URL")
 
 echo $PARSER_OUTPUT
 
