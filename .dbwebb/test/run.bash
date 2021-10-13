@@ -21,23 +21,20 @@ if (( $# < 3 )); then
     exit 1
 fi
 
-echo $2
-echo $3
-echo $4
-echo $5
-echo $6
-echo "\n"
-echo "\n"
-
+COURSE_NICK="$2"
+KMOM="$4"
 ACRONYM="$3"
 
-
-# Catches acronym
+# Catches and replaces for student acronym
 case "$5" in
     "-a" | "--acronym" )
         ACRONYM="$6"        ;;
 esac
 
-echo $ACRONYM
+URL="http://www.student.bth.se/~$ACRONYM/$COURSE_NICK/me/portfolio"
+
+PARSER_OUTPUT=$(node "/parsers/$KMOM.js $URL")
+
+echo $PARSER_OUTPUT
 
 exit 0
