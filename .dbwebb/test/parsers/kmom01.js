@@ -8,15 +8,22 @@ const url = process.argv[2];
     let portfolioResponse;
 
     try {
-        const response = await got(url + "/github.txt");
-        repo = response.body;
+        let response = await got(url + "/github.txt");
+        repo = response.body.strip();
+
+        response = await got(repo + "/tags");
+
+        let root = HTMLParser.parse(response);
+        let boxRows = root.querySelectorAll('.Box-row');
+
+        console.log(boxRows);
     } catch (error) {
         console.error(error.response.body);
         process.exit(1);
     }
 
     try {
-        const response = await got(url);
+        let response = await got(url);
         portfolioResponse = response.body;
     } catch (error) {
         console.error(error.response.body);
