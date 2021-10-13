@@ -4,17 +4,24 @@ const got = require('got');
 const url = process.argv[2];
 
 (async () => {
+    let repo;
+    let portfolioResponse;
+
     try {
         const response = await got(url + "/github.txt");
-        console.log("txt", response.body);
+        repo = response.body;
     } catch (error) {
-        console.log(error.response.body);
+        console.error(error.response.body);
+        process.exit(1);
     }
 
     try {
         const response = await got(url);
-        console.log("html", response.body);
+        portfolioResponse = response.body;
     } catch (error) {
-        console.log(error.response.body);
+        console.error(error.response.body);
+        process.exit(1);
     }
+
+    process.exit(0);
 })();
