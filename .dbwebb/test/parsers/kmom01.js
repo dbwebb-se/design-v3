@@ -1,5 +1,13 @@
 const HTMLParser = require('node-html-parser');
+const got = require('got');
 
-console.log("hej");
+const url = process.argv[2];
 
-console.log("url", process.argv);
+(async () => {
+    try {
+        const response = await got(url);
+        console.log(response.body);
+    } catch (error) {
+        console.log(error.response.body);
+    }
+})();
