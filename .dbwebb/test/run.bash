@@ -31,7 +31,7 @@ case "$5" in
         ACRONYM="$6"        ;;
 esac
 
-URL="http://www.student.bth.se/~$ACRONYM/$COURSE_NICK/me/portfolio"
+URL="http://www.student.bth.se/~$ACRONYM/dbwebb-kurser/$COURSE_NICK/me/portfolio"
 
 echo "$URL"
 
