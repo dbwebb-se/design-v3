@@ -33,7 +33,9 @@ esac
 
 URL="http://www.student.bth.se/~$ACRONYM/$COURSE_NICK/me/portfolio"
 
-PARSER_OUTPUT=$(node "/parsers/$KMOM.js $URL")
+echo "$URL"
+
+PARSER_OUTPUT=$(node "./parsers/$KMOM.js $URL")
 
 echo $PARSER_OUTPUT
 
