@@ -10,9 +10,11 @@
     "css-styleguide": "^0.9.6",
     "eslint": "^4.10.0",
     "eslint-plugin-react": "^7.4.0",
+    "got": "^11.8.2",
     "html-minifier": "^4.0.0",
     "javascript-style-guide": "^0.9.10",
     "js-yaml": "^3.13.1",
+    "node-html-parser": "^5.0.0",
     "stylelint": "^13.7.2",
     "stylelint-config-sass-guidelines": "^7.1.0",
     "uglify-js": "^3.6.5"
