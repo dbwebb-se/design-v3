@@ -9,16 +9,22 @@ const url = process.argv[2];
 
     try {
         let response = await got(url + "/github.txt");
-        repo = response.body.strip();
+        repo = response.body;
+    } catch (error) {
+        console.log("Could not find github.txt file on student server.");
+        process.exit(1);
+    }
 
-        response = await got(repo + "/tags");
+    try {
+        let response = await got(repo + "/tags");
 
-        let root = HTMLParser.parse(response);
+        let root = HTMLParser.parse(response.body);
         let boxRows = root.querySelectorAll('.Box-row');
 
         console.log(boxRows);
+        repo = response.body;
     } catch (error) {
-        console.error(error.response.body);
+        console.log("Could not find github.txt file on student server.");
         process.exit(1);
     }
 
