@@ -1,5 +1,5 @@
 const tags = {
-    checkTag: function checkTag(url, tag) {
+    checkTag: async function checkTag(url, tag) {
         let repo;
 
         try {
