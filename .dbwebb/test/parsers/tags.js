@@ -13,6 +13,8 @@ const tags = {
             console.log("Could not find github.txt file on student server.");
         }
 
+        console.log("Checking for tags on repo: " + repo);
+        
         try {
             let response = await got(repo + "/tags");
 
