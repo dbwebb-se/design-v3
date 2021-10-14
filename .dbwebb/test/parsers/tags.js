@@ -2,6 +2,8 @@ const tags = {
     checkTag: async function checkTag(url, tag) {
         let repo;
 
+        console.log(url);
+
         try {
             let response = await got(url + "/github.txt");
             repo = response.body;
