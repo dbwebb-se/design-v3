@@ -14,18 +14,18 @@ const tags = {
         }
 
         console.log("Checking for tags on repo: " + repo);
-        
+
         try {
             let response = await got(repo + "/tags");
 
             let root = HTMLParser.parse(response.body);
-            let boxRows = root.querySelectorAll('.Box-row');
+            let tagsH4 = root.querySelectorAll('.commit-title');
 
-            console.log(boxRows)
+            console.log(tagsH4);
 
-            boxRows.forEach((tag) => {
-                console.log(tag.childNodes);
-            });
+            // boxRows.forEach((tag) => {
+            //     console.log(tag.childNodes);
+            // });
         } catch (error) {
             console.log("No GitHub repo found.");
         }
