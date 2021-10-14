@@ -5,13 +5,10 @@ const tags = {
     checkTag: async function checkTag(url, tag) {
         let repo;
 
-        console.log(url);
-
         try {
             let response = await got(url + "/github.txt");
             repo = response.body;
         } catch (error) {
-            console.log(error.message);
             console.log("Could not find github.txt file on student server.");
 
             return false;
@@ -22,6 +19,8 @@ const tags = {
 
             let root = HTMLParser.parse(response.body);
             let boxRows = root.querySelectorAll('.Box-row');
+
+            console.log(boxRows)
 
             boxRows.forEach((tag) => {
                 console.log(tag.childNodes);
