@@ -3,6 +3,7 @@ const got = require('got');
 
 const tags = {
     checkTag: async function checkTag(url, tag) {
+        let tagsCheck = false;
         let repo;
 
         try {
@@ -10,8 +11,6 @@ const tags = {
             repo = response.body;
         } catch (error) {
             console.log("Could not find github.txt file on student server.");
-
-            return false;
         }
 
         try {
@@ -27,9 +26,9 @@ const tags = {
             });
         } catch (error) {
             console.log("No GitHub repo found.");
-
-            return false;
         }
+
+        return tagsCheck;
     }
 };
 
