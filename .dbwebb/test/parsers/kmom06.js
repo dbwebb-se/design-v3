@@ -10,10 +10,11 @@ const url = process.argv[2];
     console.log("===================================");
     console.log("  Performing tags checks   ");
     console.log("===================================");
-    if (await tags.checkTag(url, 2)) {
-        console.log("\u{1F973}\tCorrect 1.*.* tags found in GitHub repo.\n")
+    const versionTag = 6;
+    if (await tags.checkTag(url, versionTag)) {
+        console.log(`\u{1F973}\tCorrect ${versionTag}.*.* tags found in GitHub repo.\n`);
     } else {
-        console.log("\u{1F928}\tTags were missing for 1.*.*, remember to tag repo.\n")
+        console.log(`\u{1F928}\tTags were missing for ${versionTag}.*.*, remember to tag repo.\n`);
     }
 
     // Fetching and parsing portfolio
