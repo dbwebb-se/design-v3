@@ -22,6 +22,8 @@ const url = process.argv[2];
 
         let socialLinks = root.querySelectorAll('.social a');
 
+        console.log(socialLinks);
+
         for (let i = 0; i < socialLinks.length; i++) {
             let href = socialLinks[i].getAttribute("href");
 
