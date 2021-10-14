@@ -21,7 +21,7 @@ const tags = {
             let root = HTMLParser.parse(response.body);
             let tagsH4 = root.querySelectorAll('.commit-title a');
 
-            console.log(tagsH4);
+            console.log(tagsH4.childNodes[0]);
 
             // boxRows.forEach((tag) => {
             //     console.log(tag.childNodes);
