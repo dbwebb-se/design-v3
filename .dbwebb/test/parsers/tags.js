@@ -19,7 +19,7 @@ const tags = {
             let response = await got(repo + "/tags");
 
             let root = HTMLParser.parse(response.body);
-            let tagsH4 = root.querySelectorAll('.commit-title');
+            let tagsH4 = root.querySelectorAll('.commit-title a');
 
             console.log(tagsH4);
 
