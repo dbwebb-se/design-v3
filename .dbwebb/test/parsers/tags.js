@@ -21,11 +21,9 @@ const tags = {
             let root = HTMLParser.parse(response.body);
             let tagsH4 = root.querySelectorAll('.commit-title a');
 
-            console.log(tagsH4.childNodes[0]);
-
-            // boxRows.forEach((tag) => {
-            //     console.log(tag.childNodes);
-            // });
+            tagsH4.forEach((tag) => {
+                console.log(tag.childNodes[0]);
+            });
         } catch (error) {
             console.log("No GitHub repo found.");
         }
