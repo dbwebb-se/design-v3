@@ -6,24 +6,37 @@ const tags = require("./tags.js");
 const url = process.argv[2];
 
 (async () => {
-    let portfolioResponse;
-
+    // Testing for tags on github
     if (await tags.checkTag(url, 1)) {
         console.log("Correct 1.*.* tags found in GitHub repo.\n")
     } else {
         console.log("Tags were missing for 1.*.*, remember to tag repo.\n")
     }
 
+    // Fetching and parsing portfolio
+    let portfolioChecks = false;
     try {
-        let response = await got(url);
+        const response = await got(url);
+        const root = HTMLParser.parse(response.body);
 
-        portfolioResponse = HTMLParser.parse(response.body);
+        let socialLinks = .querySelectorAll('.social a');
+        for (let i = 0; i < socialLinks.length; i++) {
+            let href = socialLinks[i].getAttribute("href");
 
-        console.log(portfolioResponse);
+            if (href !== "https://github.com/dbwebb-se/design-v3") {
+                portfolioChecks = true;
+                console.log("The Github-repo link has been changed.");
+                break;
+            }
+        }
+
+        if (portfolioChecks) {
+            process.exit(0);
+        }
     } catch (error) {
         console.log("No response from studentserver");
         process.exit(1);
     }
 
-    process.exit(0);
+
 })();
