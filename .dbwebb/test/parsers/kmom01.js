@@ -15,6 +15,7 @@ const url = process.argv[2];
 
     // Fetching and parsing portfolio
     let portfolioChecks = false;
+
     try {
         const response = await got(url);
         const root = HTMLParser.parse(response.body);
@@ -33,11 +34,11 @@ const url = process.argv[2];
 
         if (portfolioChecks) {
             process.exit(0);
+        } else {
+            process.exit(1);
         }
     } catch (error) {
         console.log("No response from studentserver");
         process.exit(1);
     }
-
-    process.exit(1);
 })();
