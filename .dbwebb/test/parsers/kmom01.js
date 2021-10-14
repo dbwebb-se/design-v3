@@ -18,13 +18,12 @@ const url = process.argv[2];
 
     // Fetching and parsing portfolio
     let portfolioChecks = false;
+    // Create messages array
+    let messages = [];
 
     try {
         const response = await got(url);
         const root = HTMLParser.parse(response.body);
-
-        // Create messages array
-        let messages = [];
 
         console.log("===================================");
         console.log("  Performing portfolio checks   ");
@@ -68,21 +67,23 @@ const url = process.argv[2];
             portfolioChecks = false;
             messages.push("\u{1F928}\tThe theme has not been changed.");
         }
-
-        // Output all messages
-        console.log(messages.join("\n"));
-
-        // Exit with correct status
-        if (portfolioChecks) {
-            console.log("\n\u{1F973}\tAll checks passed.");
-            process.exit(0);
-        } else {
-            console.log("\n\u{1F928}\tSome checks failed.");
-            process.exit(1);
-        }
     } catch (error) {
-        console.log(error.message);
-        console.log("No response from studentserver");
+        messages.push("No response from studentserver");
+    }
+
+    // Output all messages
+    console.log(messages.join("\n"));
+
+    console.log("\n===================================");
+    console.log("    Summary    ");
+    console.log("===================================");
+
+    // Exit with correct status
+    if (portfolioChecks) {
+        console.log("\u{1F973}\tAll checks passed.");
+        process.exit(0);
+    } else {
+        console.log("\u{1F928}\tSome checks failed.");
         process.exit(1);
     }
 })();
