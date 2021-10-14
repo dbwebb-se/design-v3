@@ -23,8 +23,9 @@ const tags = {
 
             for (let i = 0; i < tagsH4.length; i++) {
                 let hrefArray = tagsH4[i].getAttribute("href").split("/");
+                let re = new RegExp("v" + tag);
 
-                if (hrefArray[hrefArray.length - 1].match(/v1/g)) {
+                if (hrefArray[hrefArray.length - 1].match(re)) {
                     tagsCheck = true;
                     break;
                 }
