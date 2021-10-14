@@ -17,7 +17,7 @@ const url = process.argv[2];
     try {
         let response = await got(url);
 
-        portfolioResponse = HTMLParser(response.body);
+        portfolioResponse = HTMLParser.parse(response.body);
 
         console.log(portfolioResponse);
     } catch (error) {
