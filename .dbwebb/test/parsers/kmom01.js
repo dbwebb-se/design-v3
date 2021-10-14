@@ -25,7 +25,8 @@ const url = process.argv[2];
         console.log(socialLinks);
 
         for (let i = 0; i < socialLinks.length; i++) {
-            let href = socialLinks[i].getAttribute("href");
+            let href = socialLinks[i];
+            console.log(href);
 
             if (href !== "https://github.com/dbwebb-se/design-v3") {
                 portfolioChecks = true;
