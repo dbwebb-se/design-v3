@@ -9,14 +9,16 @@ const url = process.argv[2];
     let portfolioResponse;
 
     if (await tags.checkTag(url, 2)) {
-        console.log("Correct 1.*.* tags found in GitHub repo.")
+        console.log("Correct 1.*.* tags found in GitHub repo.\n")
     } else {
-        console.log("Tags were missing for 1.*.*, remember to tag repo.")
+        console.log("Tags were missing for 1.*.*, remember to tag repo.\n")
     }
 
     try {
         let response = await got(url);
         portfolioResponse = response.body;
+
+        console.log(portfolioResponse);
     } catch (error) {
         console.log("No response from studentserver");
         process.exit(1);
