@@ -19,7 +19,7 @@ const url = process.argv[2];
         const response = await got(url);
         const root = HTMLParser.parse(response.body);
 
-        let socialLinks = .querySelectorAll('.social a');
+        let socialLinks = root.querySelectorAll('.social a');
         for (let i = 0; i < socialLinks.length; i++) {
             let href = socialLinks[i].getAttribute("href");
 
