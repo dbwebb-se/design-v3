@@ -41,6 +41,6 @@ echo "======================================="
 PARSER_OUTPUT=$(node "$1/.dbwebb/test/parsers/$KMOM.js" "$URL")
 
 echo $?
-echo $PARSER_OUTPUT
+echo -e $PARSER_OUTPUT
 
 exit 0
