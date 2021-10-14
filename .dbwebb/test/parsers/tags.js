@@ -22,7 +22,7 @@ const tags = {
             let tagsH4 = root.querySelectorAll('.commit-title a');
 
             tagsH4.forEach((tag) => {
-                console.log(tag["_attrs"]);
+                console.log(tag);
             });
         } catch (error) {
             console.log("No GitHub repo found.");
