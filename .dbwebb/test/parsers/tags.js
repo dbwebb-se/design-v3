@@ -21,13 +21,14 @@ const tags = {
             let root = HTMLParser.parse(response.body);
             let tagsH4 = root.querySelectorAll('.commit-title a');
 
-            tagsH4.forEach((tag) => {
-                let hrefArray = tag.getAttribute("href").split("/");
+            for (let i = 0; i < tagsH4.length; i++) {
+                let hrefArray = tagsH4[i].getAttribute("href").split("/");
+
                 if (hrefArray[hrefArray.length - 1].match(/v1/g)) {
                     tagsCheck = true;
                     break;
                 }
-            });
+            }
         } catch (error) {
             console.log("No GitHub repo found.");
         }
