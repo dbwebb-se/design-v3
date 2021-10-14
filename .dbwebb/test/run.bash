@@ -33,7 +33,10 @@ esac
 
 URL="http://www.student.bth.se/~$ACRONYM/dbwebb-kurser/$COURSE_NICK/me/portfolio"
 
-echo "$URL"
+echo "======================================="
+echo "    Testing Output    "
+echo "    Testing $KMOM for $ACRONYM    "
+echo "======================================="
 
 PARSER_OUTPUT=$(node "$1/.dbwebb/test/parsers/$KMOM.js" "$URL")
 
