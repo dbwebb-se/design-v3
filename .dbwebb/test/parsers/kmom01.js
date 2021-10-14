@@ -8,7 +8,7 @@ const url = process.argv[2];
 (async () => {
     let portfolioResponse;
 
-    if (await tags.checkTag(url, 1)) {
+    if (await tags.checkTag(url, 2)) {
         console.log("Correct 1.*.* tags found in GitHub repo.")
     } else {
         console.log("Tags were missing for 1.*.*, remember to tag repo.")
