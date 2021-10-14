@@ -1,3 +1,6 @@
+const HTMLParser = require('node-html-parser');
+const got = require('got');
+
 const tags = {
     checkTag: async function checkTag(url, tag) {
         let repo;
