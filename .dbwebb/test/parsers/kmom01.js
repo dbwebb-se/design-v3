@@ -20,8 +20,7 @@ const url = process.argv[2];
         const root = HTMLParser.parse(response.body);
 
         let socialLinks = root.querySelectorAll('.social a');
-        console.log(socialLinks);
-        
+
         for (let i = 0; i < socialLinks.length; i++) {
             let href = socialLinks[i].getAttribute("href");
 
@@ -40,5 +39,5 @@ const url = process.argv[2];
         process.exit(1);
     }
 
-
+    process.exit(1);
 })();
