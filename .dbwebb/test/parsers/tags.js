@@ -8,6 +8,7 @@ const tags = {
             let response = await got(url + "/github.txt");
             repo = response.body;
         } catch (error) {
+            console.log(error.message);
             console.log("Could not find github.txt file on student server.");
 
             return false;
