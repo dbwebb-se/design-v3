@@ -22,7 +22,11 @@ const tags = {
             let tagsH4 = root.querySelectorAll('.commit-title a');
 
             tagsH4.forEach((tag) => {
-                console.log(tag.getAttribute("href"));
+                let hrefArray = tag.getAttribute("href").split("/");
+                if (hrefArray[hrefArray.length - 1].match(/v1/g)) {
+                    tagsCheck = true;
+                    break;
+                }
             });
         } catch (error) {
             console.log("No GitHub repo found.");
