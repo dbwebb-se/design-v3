@@ -10,7 +10,7 @@ const url = process.argv[2];
     console.log("===================================");
     console.log("  Performing tags checks   ");
     console.log("===================================");
-    const versionTag = 4;
+    const versionTag = 3;
     if (await tags.checkTag(url, versionTag)) {
         console.log(`\u{1F973}\tCorrect ${versionTag}.*.* tags found in GitHub repo.\n`);
     } else {

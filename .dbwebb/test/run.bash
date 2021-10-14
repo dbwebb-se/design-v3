@@ -39,8 +39,7 @@ echo "    Testing $KMOM for $ACRONYM    "
 echo "======================================="
 
 PARSER_OUTPUT=$(node "$1/.dbwebb/test/parsers/$KMOM.js" "$URL")
-
+PARSER_EXIT_STATUS="$?"
 echo -e "$PARSER_OUTPUT"
-echo "Exit-status $?"
 
-exit 0
+exit "$PARSER_EXIT_STATUS"
