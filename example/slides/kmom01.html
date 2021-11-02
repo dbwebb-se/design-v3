@@ -52,6 +52,7 @@
             <p><code>div.main</code></p>
             <p><code>#unique</code></p>
             <p><code>div li</code></p>
+            <p><code>div li a[href="https://dbwebb.se"]</code></p>
             <p><code>div>li</code></p>
             <p><code>div:first-child</code></p>
             <p><code>div:hover</code></p>
@@ -74,15 +75,15 @@
         <div class="slide fade-in">
             <h1>Box-modellen</h1>
 
-            <div style="box-sizing: content-box; border: 4px solid red; padding: 8px; margin: 12px; height: 200px; width: 200px;">
+            <div style="box-sizing: content-box; border: 8px solid red; padding: 12px; margin: 16px; height: 200px; width: 400px;">
                 <p>
-                    content-box
+                    box-sizing: content-box; border: 4px solid red; padding: 8px; margin: 12px; height: 200px; width: 400px;
                 </p>
             </div>
 
-            <div style="box-sizing: border-box; border: 4px solid red; padding: 8px; margin: 12px; height: 200px; width: 200px;">
+            <div style="box-sizing: border-box; border: 8px solid red; padding: 12px; margin: 16px; height: 200px; width: 400px;">
                 <p>
-                    border-box
+                    box-sizing: border-box; border: 4px solid red; padding: 8px; margin: 12px; height: 200px; width: 400px;
                 </p>
             </div>
 
@@ -91,12 +92,145 @@
         </div>
 
         <div class="slide fade-in">
+            <h1>Enheter</h1>
+
+            <table>
+  <thead>
+    <tr>
+      <th>Unit</th>
+      <th>Name</th>
+      <th>Equivalent to</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>cm</code></td>
+      <td>Centimeters</td>
+      <td>1cm = 38px = 25/64in</td>
+    </tr>
+    <tr>
+      <td><code>mm</code></td>
+      <td>Millimeters</td>
+      <td>1mm = 1/10th of 1cm</td>
+    </tr>
+    <tr>
+      <td><code>Q</code></td>
+      <td>Quarter-millimeters</td>
+      <td>1Q = 1/40th of 1cm</td>
+    </tr>
+    <tr>
+      <td><code>in</code></td>
+      <td>Inches</td>
+      <td>1in = 2.54cm = 96px</td>
+    </tr>
+    <tr>
+      <td><code>pc</code></td>
+      <td>Picas</td>
+      <td>1pc = 1/6th of 1in</td>
+    </tr>
+    <tr>
+      <td><code>pt</code></td>
+      <td>Points</td>
+      <td>1pt = 1/72th of 1in</td>
+    </tr>
+    <tr>
+      <td><code>px</code></td>
+      <td>Pixels</td>
+      <td>1px = 1/96th of 1in</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+            <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">MDN om enheder</a></p>
 
         </div>
 
         <div class="slide fade-in">
+            <h1>Enheter fortsatt</h1>
+            <table class="standard-table no-markdown">
+  <thead>
+    <tr>
+      <th scope="col">Unit</th>
+      <th scope="col">Relative to</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>em</code></td>
+      <td>
+        Font size of the parent, in the case of typographical properties like
+        <code><a href="/en-US/docs/Web/CSS/font-size">font-size</a></code>, and font size of the element itself, in the case of other properties
+        like <code><a href="/en-US/docs/Web/CSS/width">width</a></code>.
+      </td>
+    </tr>
+    <tr>
+      <td><code>ex</code></td>
+      <td>x-height of the element's font.</td>
+    </tr>
+    <tr>
+      <td><code>ch</code></td>
+      <td>The advance measure (width) of the glyph "0" of the element's font.</td>
+    </tr>
+    <tr>
+      <td><code>rem</code></td>
+      <td>Font size of the root element.</td>
+    </tr>
+    <tr>
+      <td><code>lh</code></td>
+      <td>Line height of the element.</td>
+    </tr>
+    <tr>
+      <td><code>vw</code></td>
+      <td>1% of the viewport's width.</td>
+    </tr>
+    <tr>
+      <td><code>vh</code></td>
+      <td>1% of the viewport's height.</td>
+    </tr>
+    <tr>
+      <td><code>vmin</code></td>
+      <td>1% of the viewport's smaller dimension.</td>
+    </tr>
+    <tr>
+      <td><code>vmax</code></td>
+      <td>1% of the viewport's larger dimension.</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
 
-        </div>
+    <div class="slide fade-in">
+        <h1>Box-model och enheter uppgifter</h1>
+
+        <p>Skapa en ny sida i din portfölj <code>test.md</code>, som vi kan använda under kursens gång.</p>
+
+        <p>Lägg till 4 element:</p>
+        <ol>
+            <li>Ett element med 600px bredd, 100px högt, har bakgrundsfärg svart och content-box.</li>
+            <li>Ett element med 100% bredd, 100px högt, har bakgrundsfärg blå och content-box.</li>
+            <li>Ett element som fyller upp 50% av viewportens bredd, 100px högt, är rött och border-box.</li>
+            <li>Ett element som fyller ut exakt hela tillgängliga bredden, 100px högt och är grön.</li>
+        </ol>
+
+        <p>I markdown kan vi använda oss vanlig HTML rakt av, så du kan lägga till div'ar i din markdown. Gör styling inline  eller med en klass.</p>
+
+        <p>Kolla vad som händer när du använder "responsive design mode" i webbläsaren.</p>
+
+        <div data-time="15:00" class="timer"></div>
+    </div>
+
+    <div class="slide fade-in">
+
+    </div>
+
+    <div class="slide fade-in">
+
+    </div>
+
+    <div class="slide fade-in">
+
     </div>
 
     <script type="module" src="main.js"></script>
