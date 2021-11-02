@@ -31,15 +31,16 @@ case "$5" in
         ACRONYM="$6"        ;;
 esac
 
-URL="http://www.student.bth.se/~$ACRONYM/dbwebb-kurser/$COURSE_NICK/me/portfolio"
+URL="https://www.student.bth.se/~$ACRONYM/dbwebb-kurser/$COURSE_NICK/me/portfolio"
 
 echo "======================================="
-echo "    Testing Output    "
-echo "    Testing $KMOM for $ACRONYM    "
+echo "  Testing Output    "
+echo "  Testing $KMOM for $ACRONYM    "
 echo "======================================="
 
-PARSER_OUTPUT="$(node "$1/.dbwebb/test/parsers/$KMOM.js" "$URL")"
+PARSER_OUTPUT=$(node "$1"/.dbwebb/test/parsers/"$KMOM".js "$URL")
 PARSER_EXIT_STATUS="$?"
+
 echo -e "$PARSER_OUTPUT"
 
 exit "$PARSER_EXIT_STATUS"
