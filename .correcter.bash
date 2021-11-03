@@ -1,3 +1,5 @@
+dbwebb update
+
 rm -rf captain_clegg/
 
 git clone git@github.com:emilfolino/captain_clegg.git
