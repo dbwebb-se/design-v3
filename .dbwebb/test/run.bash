@@ -21,7 +21,7 @@ if (( $# < 3 )); then
     exit 1
 fi
 
-$COURSE_REPO_BASE="$1"
+COURSE_REPO_BASE="$1"
 COURSE_NICK="$2"
 KMOM="$4"
 ACRONYM="$3"
