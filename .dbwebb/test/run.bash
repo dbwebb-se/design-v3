@@ -38,7 +38,16 @@ echo "  Testing Output    "
 echo "  Testing $KMOM for $ACRONYM    "
 echo "======================================="
 
-PARSER_OUTPUT=$(node "$1"/.dbwebb/test/parsers/"$KMOM".js "$URL")
+PARSER_FILE="$COURSE_REPO_BASE/.dbwebb/test/parsers/$KMOM.js"
+
+# Handle CYGWIN and node not friends
+# https://github.com/npm/npm/issues/2465
+# https://github.com/nodejs/node-v0.x-archive/issues/5560
+case `uname` in
+    *CYGWIN*) PARSER_FILE=$(cygpath -w "$PARSER_FILE");;
+esac
+
+PARSER_OUTPUT="$(node "$PARSER_FILE" "$URL")"
 PARSER_EXIT_STATUS="$?"
 
 echo -e "$PARSER_OUTPUT"
