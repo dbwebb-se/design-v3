@@ -23,13 +23,13 @@ const url = process.argv[2];
     console.log("===================================");
     try {
         const configResponse = await got(url + "/config/config.yml");
-        let matches = configResponse.body.match(/theme:\s\w+/i);
-        let theme = matches[0];
+        let matches = configResponse.body.match(/theme\:\s\w+/i);
+        let theme = matches[0].replace("theme: ", "");
 
         const scssResponse = await got(`${url}/themes/${theme}/scss/style.scss`);
 
-        console.log("###   style.scss   ###");
-        console.log(scssResponse);
+        console.log(`\u{1F973}\tTheme exists with following content in style.scss file:\n`);
+        console.log(scssResponse.body);
     } catch (error) {
         console.log("\u{1F928}\tNo theme was found on studentserver.");
     }
@@ -46,7 +46,7 @@ const url = process.argv[2];
 
     try {
         const response = await got(url + "/about");
-        
+
         messages.push("\u{1F973}\About page exists.");
         portfolioChecks = true;
     } catch (error) {
