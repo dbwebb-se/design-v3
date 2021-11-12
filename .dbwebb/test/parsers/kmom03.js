@@ -31,13 +31,59 @@ const url = process.argv[2];
         console.log("  Performing portfolio checks   ");
         console.log("===================================");
 
+        try {
+            const response = await got(url + "/technology");
 
+            messages.push("\u{1F973}\tTechnology page exists.");
+            portfolioChecks = true;
+        } catch (error) {
+            messages.push("\u{1F928}\tTechnology page did not exist.");
+            portfolioChecks = false;
+        }
+
+        let styleChecks = false;
+        try {
+            const configResponse = await got(url + "/config/config.yml");
+            let matches = configResponse.body.match(/theme\:\s\w+/i);
+            let theme = matches[0].replace("theme: ", "");
+
+            try {
+                styleResponse = await got(url + `/themes/${theme}/css/style.css`);
+                styleChecks = true;
+            } catch (error) {
+
+            }
+
+            try {
+                styleResponse = await got(url + `/themes/${theme}/css/style.min.css`);
+                styleChecks = true;
+            } catch (error) {
+
+            }
+
+            if (styleChecks) {
+                messages.push("\u{1F973}\tStyleSheet exists.");
+
+                let matches = styleResponse.body.match(/display\:\s?grid/i);
+
+                if (matches && matches[0]) {
+                    messages.push("\u{1F973}\tGrid is being used.");
+                } else {
+                    styleChecks = false;
+                    messages.push("\u{1F928}\tGrid is not being used.");
+                }
+            } else {
+                messages.push("\u{1F928}\tStyleSheet does not exist.");
+            }
+        } catch (error) {
+            messages.push("\u{1F928}\Could not find config-file.");
+        }
 
         // Output all messages
         console.log(messages.join("\n"));
 
         // Exit with correct status
-        if (portfolioChecks) {
+        if (portfolioChecks && styleChecks) {
             console.log("\n\u{1F973}\tAll checks passed.");
             process.exit(0);
         } else {
