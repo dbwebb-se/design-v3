@@ -37,7 +37,7 @@ const gotOptions = {
         console.log("===================================");
 
         try {
-            const response = await got(url + "/technology");
+            const response = await got(url + "/?technology");
 
             messages.push("\u{1F973}\tTechnology page exists.");
             portfolioChecks = true;
@@ -85,7 +85,7 @@ const gotOptions = {
                 messages.push("\u{1F928}\tStyleSheet does not exist.");
             }
         } catch (error) {
-            messages.push("\u{1F928}\Could not find config-file.");
+            messages.push("\u{1F928}\tCould not find config-file.");
         }
 
         // Output all messages

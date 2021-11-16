@@ -23,7 +23,7 @@ const url = process.argv[2];
     console.log("===================================");
     try {
         const configResponse = await got(url + "/config/config.yml");
-        let matches = configResponse.body.match(/theme\:\s\w+/i);
+        let matches = configResponse.body.match(/theme\:\s?[\w\-\.\,]+/i);
         let theme = matches[0].replace("theme: ", "");
 
         const scssResponse = await got(`${url}/themes/${theme}/scss/style.scss`);
@@ -47,7 +47,7 @@ const url = process.argv[2];
     try {
         const response = await got(url + "/about");
 
-        messages.push("\u{1F973}\About page exists.");
+        messages.push("\u{1F973}\tAbout page exists.");
         portfolioChecks = true;
     } catch (error) {
         messages.push("\u{1F928}\tAbout page did not exist.");
