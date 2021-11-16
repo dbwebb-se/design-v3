@@ -48,41 +48,34 @@ const gotOptions = {
 
         let styleChecks = false;
         try {
+            const htmlResponse = await got(url);
+
+            let htmlMatches = htmlResponse.body.match(/style(\.min)?\.css/i);
+
+            let styleFileName = htmlMatches[0];
+
             const configResponse = await got(url + "/config/config.yml");
-            let matches = configResponse.body.match(/theme\:\s\w+/i);
-            let theme = matches[0].replace("theme: ", "");
+            let configMatches = configResponse.body.match(/theme\:\s?[\w\-\.\,]+/i);
+            let theme = configMatches[0].replace("theme: ", "");
 
-            // console.log(`${url}/themes/${theme}/css/style.css`);
-
+            let styleResponse;
             try {
-                styleResponse = await got(`${url}/themes/${theme}/css/style.css`, gotOptions);
+                styleResponse = await got(`${url}/themes/${theme}/css/${styleFileName}`);
                 styleChecks = true;
-            } catch (error) {
 
-            }
-
-            try {
-                styleResponse = await got(`${url}/themes/${theme}/css/style.min.css`, gotOptions);
-                styleChecks = true;
-            } catch (error) {
-
-            }
-
-            if (styleChecks) {
                 messages.push("\u{1F973}\tStyleSheet exists.");
-                // console.log(styleResponse.body);
-                let matches = styleResponse.body.match(/display\:\s?grid/i);
 
-                // console.log(matches);
+                let styleMatches = styleResponse.body.match(/display\:\s?grid/i);
 
-                if (matches && matches[0]) {
+                if (styleMatches && styleMatches[0]) {
                     messages.push("\u{1F973}\tGrid is being used.");
                 } else {
                     styleChecks = false;
                     messages.push("\u{1F928}\tGrid is not being used.");
                 }
-            } else {
-                messages.push("\u{1F928}\tStyleSheet does not exist.");
+            } catch (error) {
+                messages.push("\u{1F973}\tStyleSheet does not exists.");
+                styleChecks = false;
             }
         } catch (error) {
             messages.push("\u{1F928}\tCould not find config-file.");
@@ -90,6 +83,10 @@ const gotOptions = {
 
         // Output all messages
         console.log(messages.join("\n"));
+
+        console.log("\n===================================");
+        console.log("  Summary    ");
+        console.log("===================================");
 
         // Exit with correct status
         if (portfolioChecks && styleChecks) {
