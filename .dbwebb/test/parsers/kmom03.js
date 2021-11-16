@@ -5,6 +5,11 @@ const tags = require("./tags.js");
 
 const url = process.argv[2];
 
+const gotOptions = {
+    cache: false,
+    cacheOptions: undefined,
+};
+
 (async () => {
     // Testing for tags on github
     console.log("===================================");
@@ -47,15 +52,17 @@ const url = process.argv[2];
             let matches = configResponse.body.match(/theme\:\s\w+/i);
             let theme = matches[0].replace("theme: ", "");
 
+            // console.log(`${url}/themes/${theme}/css/style.css`);
+
             try {
-                styleResponse = await got(url + `/themes/${theme}/css/style.css`);
+                styleResponse = await got(`${url}/themes/${theme}/css/style.css`, gotOptions);
                 styleChecks = true;
             } catch (error) {
 
             }
 
             try {
-                styleResponse = await got(url + `/themes/${theme}/css/style.min.css`);
+                styleResponse = await got(`${url}/themes/${theme}/css/style.min.css`, gotOptions);
                 styleChecks = true;
             } catch (error) {
 
@@ -63,8 +70,10 @@ const url = process.argv[2];
 
             if (styleChecks) {
                 messages.push("\u{1F973}\tStyleSheet exists.");
-
+                // console.log(styleResponse.body);
                 let matches = styleResponse.body.match(/display\:\s?grid/i);
+
+                // console.log(matches);
 
                 if (matches && matches[0]) {
                     messages.push("\u{1F973}\tGrid is being used.");
