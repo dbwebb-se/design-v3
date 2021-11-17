@@ -26,6 +26,14 @@ code {
     font-size: 1em;
 }
 
+pre {
+    border: 1px solid #ccc;
+    background-color: #444;
+    color: #fcfcfc;
+    padding: 1em;
+    font-size: 1.8em;
+}
+
 @media (min-width: 64em) {
     html {
         font-size: 112.5%;
@@ -71,6 +79,7 @@ code {
     position: absolute;
     top: 0;
     right: 0;
+    font-family: Trebuchet MS, sans-serif;
 }
 
 table {
