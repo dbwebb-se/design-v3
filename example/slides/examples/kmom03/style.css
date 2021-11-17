@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+.box {
+    width: 7em;
+    height: 7em;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fcfcfc;
+}
+
+.red-box {
+    background-color: #ff4136;
+}
+
+.blue-box {
+    background-color: #0074d9;
+}
+
+.green-box {
+    background-color: #2ecc40;
+}
+
+.black-box {
+    background-color: #000;
+}
+
+.white-box {
+    color: #333;
+}
