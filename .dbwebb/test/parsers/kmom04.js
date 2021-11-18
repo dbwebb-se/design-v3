@@ -11,8 +11,11 @@ const url = process.argv[2];
     console.log("  Performing tags checks   ");
     console.log("===================================");
     const versionTag = 4;
+
+    let tagCheck = false;
     if (await tags.checkTag(url, versionTag)) {
         console.log(`\u{1F973}\tCorrect ${versionTag}.*.* tags found in GitHub repo.\n`);
+        tagCheck = true;
     } else {
         console.log(`\u{1F928}\tTags were missing for ${versionTag}.*.*, remember to tag repo.\n`);
     }
@@ -31,13 +34,35 @@ const url = process.argv[2];
         console.log("  Performing portfolio checks   ");
         console.log("===================================");
 
+        let linkCheck = false;
+        let themeLink = root.querySelector('a[href=?action=theme]');
 
+        if (themeLink) {
+            linkCheck = true;
+            messages.push(`\u{1F973}\tDark theme link was found.`);
+        } else {
+            messages.push(`\u{1F928}\tDark theme link was not found.`);
+        }
+
+        let analysisCheck = false;
+
+        try {
+            const response = await got(url + "/analysis/01_colors");
+            analysisCheck = true;
+            messages.push(`\u{1F973}\tAnalysis page found.`);
+        } catch(error) {
+            messages.push(`\u{1F928}\tAnalysis was not page found.`);
+        }
 
         // Output all messages
         console.log(messages.join("\n"));
 
+        console.log("\n===================================");
+        console.log("  Summary    ");
+        console.log("===================================");
+
         // Exit with correct status
-        if (portfolioChecks) {
+        if (tagCheck && linkCheck && analysisCheck) {
             console.log("\n\u{1F973}\tAll checks passed.");
             process.exit(0);
         } else {
