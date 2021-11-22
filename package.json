@@ -18,5 +18,8 @@
     "stylelint": "^13.7.2",
     "stylelint-config-sass-guidelines": "^7.1.0",
     "uglify-js": "^3.6.5"
+  },
+  "dependencies": {
+    "lighthouse": "^9.0.0"
   }
 }
