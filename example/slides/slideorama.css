@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&display=swap');
+
 html,
 body {
     width: 100%;
@@ -11,15 +13,16 @@ html {
 }
 
 h1 {
-    font-size: 5em;
-    margin-bottom: 2.52rem;
-    font-family: Palatino, Palatino Linotype, Georgia, serif;
+    font-size: 7em;
+    margin-bottom: 2.94rem;
+    font-family: 'Bangers', cursive;
+    border-bottom: 12px solid #940f6c;
 }
 
 p {
-    font-size: 1.8em;
-    margin-bottom: 2.52rem;
-    font-family: Trebuchet MS, sans-serif;
+    font-size: 2.1em;
+    margin-bottom: 2.94rem;
+    font-family: 'Carter One', cursive;
 }
 
 code {
@@ -49,9 +52,14 @@ pre {
     flex-flow: row | nowrap;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    color: #333;
+    background: linear-gradient(120deg, rgba(0,145,147,0.3), rgba(148,15,108,0.3), rgba(148,127,15,0.3));
+    color: #009193;
     font-family: sans-serif;
+}
+
+a,
+a:visited {
+    color: #074647;
 }
 
 .slide-container {
@@ -79,7 +87,7 @@ pre {
     position: absolute;
     top: 0;
     right: 0;
-    font-family: Trebuchet MS, sans-serif;
+    font-family: 'Carter One', cursive;
 }
 
 table {
@@ -108,4 +116,10 @@ tbody tr td {
 
 .lapp p {
     font-family: Bradley Hand, cursive;
+}
+
+.left-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
