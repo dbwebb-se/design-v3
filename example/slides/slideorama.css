@@ -19,10 +19,20 @@ h1 {
     border-bottom: 12px solid #940f6c;
 }
 
+h2 {
+    font-size: 3em;
+    margin-bottom: 2.94rem;
+    font-family: 'Bangers', cursive;
+}
+
 p {
     font-size: 2.1em;
     margin-bottom: 2.94rem;
     font-family: 'Carter One', cursive;
+}
+
+img {
+    margin-bottom: 2.94rem;
 }
 
 code {
