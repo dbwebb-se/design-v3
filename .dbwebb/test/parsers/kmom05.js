@@ -35,7 +35,7 @@ const url = process.argv[2];
         console.log("===================================");
 
         let galleryCheck = false;
-        let images = root.querySelectorAll('.main img');
+        let images = root.querySelectorAll('img');
         let imagesCheck = true;
         let matchCImage = /image\//gi;
 
