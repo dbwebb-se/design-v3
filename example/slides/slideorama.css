@@ -133,3 +133,8 @@ tbody tr td {
     flex-direction: row;
     justify-content: space-between;
 }
+
+.bad-design {
+    display: flex;
+    flex-direction: column;
+}
