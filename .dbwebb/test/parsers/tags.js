@@ -19,7 +19,7 @@ const tags = {
             let response = await got(repo + "/tags");
 
             let root = HTMLParser.parse(response.body);
-            let tagsH4 = root.querySelectorAll('.commit-title a');
+            let tagsH4 = root.querySelectorAll('.f4.d-inline a');
 
             for (let i = 0; i < tagsH4.length; i++) {
                 let hrefArray = tagsH4[i].getAttribute("href").split("/");
