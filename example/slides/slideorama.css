@@ -7,28 +7,37 @@ body {
     margin: 0;
 }
 
+body {
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
 html {
     font-size: 100%;
-    line-height: 1.4;
 }
 
 h1 {
     font-size: 7em;
     margin-bottom: 2.94rem;
-    font-family: 'Bangers', cursive;
-    border-bottom: 12px solid #940f6c;
+    /* font-family: 'Bangers', cursive;
+    border-bottom: 12px solid #940f6c; */
 }
 
 h2 {
     font-size: 3em;
     margin-bottom: 2.94rem;
-    font-family: 'Bangers', cursive;
+    /* font-family: 'Bangers', cursive; */
 }
 
 p {
     font-size: 2.1em;
     margin-bottom: 2.94rem;
-    font-family: 'Carter One', cursive;
+    /* font-family: 'Carter One', cursive; */
+}
+
+li {
+    font-size: 2.1em;
+    margin-bottom: 2.94rem;
 }
 
 img {
@@ -37,6 +46,7 @@ img {
 
 code {
     font-size: 1em;
+    margin-bottom: 2.94rem;
 }
 
 pre {
@@ -45,13 +55,10 @@ pre {
     color: #fcfcfc;
     padding: 1em;
     font-size: 1.8em;
+    margin-bottom: 2.94rem;
 }
 
-@media (min-width: 64em) {
-    html {
-        font-size: 112.5%;
-    }
-}
+
 
 .presentation {
     width: 100%;
@@ -62,15 +69,14 @@ pre {
     flex-flow: row | nowrap;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(120deg, rgba(0,145,147,0.3), rgba(148,15,108,0.3), rgba(148,127,15,0.3));
-    color: #009193;
-    font-family: sans-serif;
+    /* background: linear-gradient(120deg, rgba(0,145,147,0.3), rgba(148,15,108,0.3), rgba(148,127,15,0.3));
+    color: #009193; */
 }
 
-a,
+/* a,
 a:visited {
     color: #074647;
-}
+} */
 
 .slide-container {
     display: none;
@@ -97,7 +103,7 @@ a:visited {
     position: absolute;
     top: 0;
     right: 0;
-    font-family: 'Carter One', cursive;
+    /* font-family: 'Carter One', cursive; */
 }
 
 table {
@@ -137,4 +143,10 @@ tbody tr td {
 .bad-design {
     display: flex;
     flex-direction: column;
+}
+
+@media (min-width: 64em) {
+    html {
+        font-size: 112.5%;
+    }
 }
