@@ -9,7 +9,6 @@
     "clean-css": "^4.2.1",
     "css-styleguide": "^0.9.6",
     "eslint": "^8.3.0",
-    "eslint-plugin-react": "^7.4.0",
     "got": "^11.8.5",
     "html-minifier": "^4.0.0",
     "javascript-style-guide": "^0.9.10",
