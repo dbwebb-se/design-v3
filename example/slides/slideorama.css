@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather&family=Source+Sans+Pro:wght@300&display=swap');
 
 html,
 body {
@@ -8,8 +8,9 @@ body {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.4;
+    color: #333;
 }
 
 html {
@@ -19,20 +20,19 @@ html {
 h1 {
     font-size: 7em;
     margin-bottom: 2.94rem;
-    /* font-family: 'Bangers', cursive;
-    border-bottom: 12px solid #940f6c; */
+    font-family: 'Merriweather', serif;
+    /* border-bottom: 12px solid #940f6c; */
 }
 
 h2 {
     font-size: 3em;
     margin-bottom: 2.94rem;
-    /* font-family: 'Bangers', cursive; */
+    font-family: 'Merriweather', serif;
 }
 
 p {
     font-size: 2.1em;
     margin-bottom: 2.94rem;
-    /* font-family: 'Carter One', cursive; */
 }
 
 li {
@@ -47,6 +47,7 @@ img {
 code {
     font-size: 1em;
     margin-bottom: 2.94rem;
+    font-family: monospace;
 }
 
 pre {
@@ -58,8 +59,6 @@ pre {
     margin-bottom: 2.94rem;
 }
 
-
-
 .presentation {
     width: 100%;
     height: 100%;
@@ -69,14 +68,7 @@ pre {
     flex-flow: row | nowrap;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(120deg, rgba(0,145,147,0.3), rgba(148,15,108,0.3), rgba(148,127,15,0.3));
-    color: #009193; */
 }
-
-/* a,
-a:visited {
-    color: #074647;
-} */
 
 .slide-container {
     display: none;
@@ -103,7 +95,6 @@ a:visited {
     position: absolute;
     top: 0;
     right: 0;
-    /* font-family: 'Carter One', cursive; */
 }
 
 table {
@@ -131,7 +122,7 @@ tbody tr td {
 }
 
 .lapp p {
-    font-family: Bradley Hand, cursive;
+    font-family: 'Caveat', cursive;
 }
 
 .left-right {
@@ -143,6 +134,13 @@ tbody tr td {
 .bad-design {
     display: flex;
     flex-direction: column;
+}
+
+.typo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 @media (min-width: 64em) {
