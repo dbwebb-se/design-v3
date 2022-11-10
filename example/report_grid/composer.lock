@@ -1,0 +1,489 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "99bc88988bd68da6ffcc6b66edb22392",
+    "packages": [
+        {
+            "name": "erusev/parsedown",
+            "version": "1.8.0-beta-7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown.git",
+                "reference": "fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955",
+                "reference": "fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Parsedown": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "Parser for Markdown.",
+            "homepage": "http://parsedown.org",
+            "keywords": [
+                "markdown",
+                "parser"
+            ],
+            "support": {
+                "issues": "https://github.com/erusev/parsedown/issues",
+                "source": "https://github.com/erusev/parsedown/tree/1.8.0-beta-7"
+            },
+            "time": "2019-03-17T18:47:21+00:00"
+        },
+        {
+            "name": "erusev/parsedown-extra",
+            "version": "0.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown-extra.git",
+                "reference": "32f6e957286bf9ff98d07ca924a18299461acc8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/32f6e957286bf9ff98d07ca924a18299461acc8f",
+                "reference": "32f6e957286bf9ff98d07ca924a18299461acc8f",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "^1.8.0|^1.8.0-beta-4",
+                "ext-dom": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.3.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ParsedownExtra": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "An extension of Parsedown that adds support for Markdown Extra.",
+            "homepage": "https://github.com/erusev/parsedown-extra",
+            "keywords": [
+                "markdown",
+                "markdown extra",
+                "parsedown",
+                "parser"
+            ],
+            "support": {
+                "issues": "https://github.com/erusev/parsedown-extra/issues",
+                "source": "https://github.com/erusev/parsedown-extra/tree/0.8.0"
+            },
+            "time": "2019-12-29T11:14:16+00:00"
+        },
+        {
+            "name": "mos/cimage",
+            "version": "v0.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mosbth/cimage.git",
+                "reference": "024905676145ee8a000fb0b6735ce6f8ba98f427"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mosbth/cimage/zipball/024905676145ee8a000fb0b6735ce6f8ba98f427",
+                "reference": "024905676145ee8a000fb0b6735ce6f8ba98f427",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "suggest": {
+                "ext-curl": "*",
+                "ext-exif": "*",
+                "ext-gd": "*",
+                "ext-imagick": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "defines.php",
+                    "functions.php"
+                ],
+                "classmap": [
+                    "CImage.php",
+                    "CHttpGet.php",
+                    "CRemoteImage.php",
+                    "CWhitelist.php",
+                    "CAsciiArt.php",
+                    "CCache.php",
+                    "CFastTrackCache.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikael Roos",
+                    "email": "me@mikaelroos.se",
+                    "homepage": "http://mikaelroos.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Process, scale, resize, crop and filter images.",
+            "homepage": "http://dbwebb.se/opensource/cimage",
+            "keywords": [
+                "gd",
+                "image",
+                "imageprocessing"
+            ],
+            "support": {
+                "docs": "http://dbwebb.se/opensource/cimage",
+                "issues": "https://github.com/mosbth/cimage/issues",
+                "source": "https://github.com/mosbth/cimage/tree/master"
+            },
+            "time": "2020-06-08T10:38:44+00:00"
+        },
+        {
+            "name": "picocms/pico",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/picocms/Pico.git",
+                "reference": "232a90bdf8dac5c2710c1a4b27a397bf28f9a75c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/picocms/Pico/zipball/232a90bdf8dac5c2710c1a4b27a397bf28f9a75c",
+                "reference": "232a90bdf8dac5c2710c1a4b27a397bf28f9a75c",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "~1.8.0|1.8.0@beta",
+                "erusev/parsedown-extra": "~0.8.0|0.8.0@beta",
+                "php": ">=5.3.6",
+                "symfony/yaml": "^2.8",
+                "twig/twig": "^1.36"
+            },
+            "suggest": {
+                "picocms/composer-installer": "This Composer plugin is responsible for installing Pico plugins and themes using the Composer package manager.",
+                "picocms/pico-deprecated": "PicoDeprecated's purpose is to maintain backward compatibility to older versions of Pico.",
+                "picocms/pico-theme": "Pico requires a theme to actually display the contents of your website. This is Pico's official default theme."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev",
+                    "dev-pico-2.1": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pico": "lib/",
+                    "PicoPluginInterface": "lib/",
+                    "AbstractPicoPlugin": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gilbert Pellegrom",
+                    "email": "gilbert@pellegrom.me",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Daniel Rudolf",
+                    "email": "picocms.org@daniel-rudolf.de",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "The Pico Community",
+                    "homepage": "http://picocms.org/"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/picocms/Pico/graphs/contributors"
+                }
+            ],
+            "description": "Pico is a flat file CMS, this means there is no administration backend and database to deal with. You simply create .md files in the \"content\" folder and that becomes a page.",
+            "homepage": "http://picocms.org/",
+            "keywords": [
+                "Simple",
+                "cms",
+                "content-management",
+                "flat-file",
+                "markdown",
+                "markdown-to-html",
+                "php",
+                "pico",
+                "pico-cms",
+                "picocms",
+                "twig",
+                "website",
+                "yaml"
+            ],
+            "support": {
+                "docs": "http://picocms.org/docs",
+                "issues": "https://github.com/picocms/Pico/issues",
+                "source": "https://github.com/picocms/Pico"
+            },
+            "time": "2019-11-24T23:43:58+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.26.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4",
+                "reference": "6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "provide": {
+                "ext-ctype": "*"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.26-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.26.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-24T11:49:31+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v2.8.52",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "02c1859112aa779d9ab394ae4f3381911d84052b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/02c1859112aa779d9ab394ae4f3381911d84052b",
+                "reference": "02c1859112aa779d9ab394ae4f3381911d84052b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/yaml/tree/v2.8.52"
+            },
+            "time": "2018-11-11T11:18:13+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.44.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "0887422319889e442458e48e2f3d9add1a172ad5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/0887422319889e442458e48e2f3d9add1a172ad5",
+                "reference": "0887422319889e442458e48e2f3d9add1a172ad5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "^1.8"
+            },
+            "require-dev": {
+                "psr/container": "^1.0",
+                "symfony/phpunit-bridge": "^4.4.9|^5.0.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.44-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                },
+                "psr-4": {
+                    "Twig\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Twig Team",
+                    "role": "Contributors"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "https://twig.symfony.com",
+            "keywords": [
+                "templating"
+            ],
+            "support": {
+                "issues": "https://github.com/twigphp/Twig/issues",
+                "source": "https://github.com/twigphp/Twig/tree/v1.44.7"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/twig/twig",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-09-28T08:38:36+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "beta",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
