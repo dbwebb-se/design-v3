@@ -3,10 +3,23 @@
 <body>
     {% include 'incl/nav.twig' %}
 
-    <h1>Bara så vi vet vi är rätt</h1>
-    <div class="main" role="main">
-        {{ content }}
-    </div>
+    <article class="main" role="main">
+        <nav class="sidebar">
+            <h3>Alla kmom</h3>
+            <ul class="sidebar-menu">
+                {% for page in pages("report") %}
+                    <li{% if page.id==current_page.id %} class="active" {% endif %}>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+
+        <div class="article-content">
+            {{ content }}
+        </div>
+    </article>
 
     {% include 'incl/footer.twig' %}
 </body>
