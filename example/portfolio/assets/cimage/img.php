@@ -221,6 +221,16 @@ verbose("referer host = $refererHost");
 
 
 /**
+ * Setting windows2wsl from config.
+ */
+$windows2wsl = getConfig("windows2wsl", false);
+if ($windows2wsl) {
+    define("WINDOWS2WSL", true);
+}
+
+
+
+/**
  * Create the class for the image.
  */
 $CImage = getConfig('CImage', 'CImage');
