@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather&family=Source+Sans+Pro:wght@300&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html,
 body {
     width: 100%;
@@ -21,7 +27,7 @@ h1 {
     font-size: 7em;
     margin-bottom: 2.94rem;
     font-family: 'Merriweather', serif;
-    /* border-bottom: 12px solid #940f6c; */
+    border-bottom: 12px solid #FE10A8;
 }
 
 h2 {
@@ -63,11 +69,12 @@ pre {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     flex-flow: row | nowrap;
     justify-content: center;
     align-items: center;
+    background-color: #11B300;
 }
 
 .slide-container {
@@ -79,10 +86,16 @@ pre {
     height: 100%;
     box-sizing: border-box;
     position: relative;
+    background-color: white;
+    padding: 2rem;
+}
+
+.slide a {
+    color: #B30573;
 }
 
 .fade-in {
-    animation: fade-in 1s ease-out;
+    animation: fade-in 0.5s ease-out;
 }
 
 @keyframes fade-in {
@@ -141,6 +154,17 @@ tbody tr td {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.split {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.split img {
+    width: 40%;
 }
 
 @media (min-width: 64em) {
