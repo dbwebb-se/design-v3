@@ -9,7 +9,7 @@
     "clean-css": "^4.2.1",
     "css-styleguide": "^0.9.6",
     "eslint": "^8.3.0",
-    "got": "^11.8.5",
+    "got": "^12.5.3",
     "html-minifier": "^4.0.0",
     "javascript-style-guide": "^0.9.10",
     "js-yaml": "^3.13.1",
@@ -19,6 +19,6 @@
     "uglify-js": "^3.6.5"
   },
   "dependencies": {
-    "lighthouse": "^9.0.0"
+    "lighthouse": "^9.6.8"
   }
 }
