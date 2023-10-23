@@ -42,7 +42,7 @@
     },
     "require": {
         "picocms/pico": "^2.1.0",
-        "mos/cimage": "^0.8.1",
+        "mos/cimage": "^0.8.5",
         "erusev/parsedown-extra": "0.8.0"
     },
     "minimum-stability": "beta",
