@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "99bc88988bd68da6ffcc6b66edb22392",
+    "content-hash": "f97ab7f133f216fb5652352725358d3d",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -112,16 +112,16 @@
         },
         {
             "name": "mos/cimage",
-            "version": "v0.8.1",
+            "version": "v0.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mosbth/cimage.git",
-                "reference": "024905676145ee8a000fb0b6735ce6f8ba98f427"
+                "reference": "b44be78f063c596c20916ae58f89cf40a01901f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mosbth/cimage/zipball/024905676145ee8a000fb0b6735ce6f8ba98f427",
-                "reference": "024905676145ee8a000fb0b6735ce6f8ba98f427",
+                "url": "https://api.github.com/repos/mosbth/cimage/zipball/b44be78f063c596c20916ae58f89cf40a01901f2",
+                "reference": "b44be78f063c596c20916ae58f89cf40a01901f2",
                 "shasum": ""
             },
             "require": {
@@ -171,9 +171,9 @@
             "support": {
                 "docs": "http://dbwebb.se/opensource/cimage",
                 "issues": "https://github.com/mosbth/cimage/issues",
-                "source": "https://github.com/mosbth/cimage/tree/master"
+                "source": "https://github.com/mosbth/cimage/tree/v0.8.6"
             },
-            "time": "2020-06-08T10:38:44+00:00"
+            "time": "2023-10-27T08:20:16+00:00"
         },
         {
             "name": "picocms/pico",
@@ -211,8 +211,8 @@
             "autoload": {
                 "psr-0": {
                     "Pico": "lib/",
-                    "PicoPluginInterface": "lib/",
-                    "AbstractPicoPlugin": "lib/"
+                    "AbstractPicoPlugin": "lib/",
+                    "PicoPluginInterface": "lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -265,16 +265,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.26.0",
+            "version": "v1.28.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4"
+                "reference": "ea208ce43cbb04af6867b4fdddb1bdbf84cc28cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4",
-                "reference": "6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/ea208ce43cbb04af6867b4fdddb1bdbf84cc28cb",
+                "reference": "ea208ce43cbb04af6867b4fdddb1bdbf84cc28cb",
                 "shasum": ""
             },
             "require": {
@@ -289,7 +289,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.26-dev"
+                    "dev-main": "1.28-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -327,7 +327,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.26.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -343,7 +343,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-24T11:49:31+00:00"
+            "time": "2023-01-26T09:26:14+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -485,5 +485,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.1.0"
 }
