@@ -115,7 +115,7 @@ tbody tr td {
     border-top: 1px solid #ccc;
 }
 
-/* .lapp {
+.lapp {
     width: 300px;
     height: 400px;
     border: 1px solid #ccc;
@@ -156,7 +156,7 @@ tbody tr td {
 
 .split img {
     width: 40%;
-} */
+}
 
 @media (min-width: 64em) {
     html {
