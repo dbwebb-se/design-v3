@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,7 @@ body {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.4;
     color: #333;
 }
