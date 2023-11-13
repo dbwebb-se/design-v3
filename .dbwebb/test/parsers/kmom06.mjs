@@ -1,9 +1,9 @@
-const HTMLParser = require('node-html-parser');
-const got = require('got');
-const lighthouse = require('lighthouse');
-const chromeLauncher = require('chrome-launcher');
+import HTMLParser from 'node-html-parser';
+import got from 'got';
+import lighthouse from 'lighthouse';
+import * as chromeLauncher from 'chrome-launcher';
 
-const tags = require("./tags.js");
+import tags from "./tags.js";
 
 const url = process.argv[2];
 

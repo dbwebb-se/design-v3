@@ -41,6 +41,11 @@ echo "======================================="
 
 PARSER_FILE="$COURSE_REPO_BASE/.dbwebb/test/parsers/$KMOM.js"
 
+if [[ "$KMOM" == "kmom06" ]]
+then
+    PARSER_FILE="$COURSE_REPO_BASE/.dbwebb/test/parsers/kmom06.mjs"
+fi
+
 # Handle CYGWIN and node not friends
 # https://github.com/npm/npm/issues/2465
 # https://github.com/nodejs/node-v0.x-archive/issues/5560

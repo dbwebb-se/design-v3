@@ -13,12 +13,10 @@
     "html-minifier": "^4.0.0",
     "javascript-style-guide": "^0.9.10",
     "js-yaml": "^3.13.1",
+    "lighthouse": "^11.3.0",
     "node-html-parser": "^5.0.0",
     "stylelint": "^13.7.2",
     "stylelint-config-sass-guidelines": "^7.1.0",
     "uglify-js": "^3.6.5"
-  },
-  "dependencies": {
-    "lighthouse": "^9.0.0"
   }
 }
