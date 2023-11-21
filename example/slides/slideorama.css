@@ -16,7 +16,8 @@ body {
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.4;
-    color: #333;
+    color: #fff;
+    background-color: #65A6EB;
 }
 
 html {
@@ -36,6 +37,10 @@ h2 {
 p {
     font-size: 2.1em;
     margin-bottom: 2.94rem;
+}
+
+a {
+    color: #65EBDA;
 }
 
 li {
@@ -71,7 +76,7 @@ pre {
     flex-flow: row | nowrap;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #65A6EB;
 }
 
 .slide-container {
@@ -83,7 +88,7 @@ pre {
     height: 100%;
     box-sizing: border-box;
     position: relative;
-    background-color: white;
+    background-color: #65A6EB;
     padding: 2rem;
 }
 
