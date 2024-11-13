@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +15,8 @@ body {
 
 body {
     font-family: sans-serif;
-    /* line-height: 1.4; */
-    color: #000;
+    line-height: 1.4;
+    color: #333;
     /* background-color: #65A6EB; */
 }
 
@@ -23,17 +25,17 @@ html {
 }
 
 h1 {
-    /* font-size: 7em; */
+    font-size: 7em;
     margin-bottom: 2.94rem;
 }
 
 h2 {
-    /* font-size: 3em; */
+    font-size: 3em;
     margin-bottom: 2.94rem;
 }
 
 p {
-    /* font-size: 2.1em; */
+    font-size: 2.1em;
     margin-bottom: 2.94rem;
 }
 
@@ -42,7 +44,7 @@ p {
 } */
 
 li {
-    /* font-size: 2.1em; */
+    font-size: 2.1em;
     margin-bottom: 2.94rem;
 }
 
