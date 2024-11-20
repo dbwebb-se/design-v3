@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 100vw;
+    height: 100vh;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+}
+
+.one {
+    background-color: #f00;
+}
+
+.two {
+    background-color: #0f0;
+}
+
+.three {
+    background-color: #00f;
+}
