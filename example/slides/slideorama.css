@@ -16,8 +16,8 @@ body {
 body {
     font-family: sans-serif;
     line-height: 1.4;
-    color: #333;
-    /* background-color: #65A6EB; */
+    color: #fff;
+    background-color: #65A6EB;
 }
 
 html {
@@ -27,6 +27,7 @@ html {
 h1 {
     font-size: 7em;
     margin-bottom: 2.94rem;
+    border-bottom: 8px solid #B3D8DB;
 }
 
 h2 {
@@ -39,9 +40,9 @@ p {
     margin-bottom: 2.94rem;
 }
 
-/* a {
-    color: #65EBDA;
-} */
+a {
+    color: #8FDBC8;
+}
 
 li {
     font-size: 2.1em;
@@ -76,7 +77,7 @@ pre {
     flex-flow: row | nowrap;
     justify-content: center;
     align-items: center;
-    /* background-color: #65A6EB; */
+    background-color: #65A6EB;
 }
 
 .slide-container {
@@ -88,7 +89,7 @@ pre {
     height: 100%;
     box-sizing: border-box;
     position: relative;
-    /* background-color: #65A6EB; */
+    background-color: #65A6EB;
     padding: 2rem;
 }
 
